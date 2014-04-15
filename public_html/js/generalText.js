@@ -1,5 +1,6 @@
 function generalText(textPaper) {
-    var startText = textPaper.text(40, 40, "Some general text");
+    textPaper.clear();
+    var startText = textPaper.text(0, 0, "Some general text");
     startText.attr(
             {
                 'font-family': "arial",

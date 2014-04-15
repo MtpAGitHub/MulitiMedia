@@ -1,9 +1,11 @@
 function gameInstructions(textPaper) {
-    var instructText = textPaper.text(40, 40, "Some example instruction text");
+    textPaper.clear();
+    var instructText = textPaper.text(0, 0, "Some example instruction text");
     instructText.attr(
             {
                 'font-family': "arial",
-                'font-size': 24
+                'font-size': 24,
+                'fill': "white"
             }
     );
 }

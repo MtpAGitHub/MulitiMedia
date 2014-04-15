@@ -1,9 +1,11 @@
 function gameStats(textPaper) {
-    var statsText = textPaper.text(40, 40, "Some example stats text");
+    textPaper.clear();
+    var statsText = textPaper.text(0, 0, "Some example stats text");
     statsText.attr(
             {
                 'font-family': "arial",
-                'font-size': 24
+                'font-size': 24,
+                'fill': "white"
             }
     );
     statsDebugMsg("one","two");

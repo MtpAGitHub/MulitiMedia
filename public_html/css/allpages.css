@@ -17,30 +17,30 @@ td {
 }
 
 .gameOptions {
-    width: 600px;
-    height: 300px;
     float: left;
     margin : 10px 10px 10px 10px;
 }
 
 .gameText {
-    background-color: #66A3FF;
+    background-color: black;
+    border-color: white;
     font-size: 105%;
     margin : 10px 10px 10px 10px;
-    height : 300px;
-    width: 400px;
-    border: 2px solid white;
+    float: right;
 }
 
 .headers {
     color: red;
     padding: 10px;
     background-color: #003380;
+    border: 2px solid white;
+    border-radius: 15px;
 }
 
 .middle {
     padding: 5px;
-    border: 1px solid black;
+    border: 2px solid white;
+    border-radius: 15px;
     margin: 20px;
     overflow: auto;
     width: 95%;
@@ -53,6 +53,8 @@ td {
     padding: 5px;
     clear: left;
     margin: 10px;
+    border: 2px solid white;
+    border-radius: 15px;
 }
 
 h2 {

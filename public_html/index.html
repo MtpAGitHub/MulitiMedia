@@ -18,11 +18,10 @@ and open the template in the editor.
         <script>
             var textPaper;
             TEXTTYPE = {
-                INSTRUCT : "I",
-                STATS : "S",
-                GENERAL : "G"
+                INSTRUCT: "I",
+                STATS: "S",
+                GENERAL: "G"
             };
-            var currentText = TEXTTYPE.GENERAL;
         </script>
     </head>
     <body>
@@ -39,10 +38,10 @@ and open the template in the editor.
                                     <td><a href="htmlpages/gamepage.html"><img src="icons/start.png" alt="Start"></a></td>
                                 </tr>
                                 <tr id="stats">
-                                    <td><input type="image" src="icons/stats.png" alt="Stats" onclick="currentText = textWindow(textPaper, TEXTTYPE.STATS)"></td>
+                                    <td><input type="image" src="icons/stats.png" alt="Stats" onclick="return textWindow(textPaper,TEXTTYPE.STATS)"></td>
                                 </tr>
                                 <tr id="instruction">
-                                    <td><input type="image" src="icons/instructions.png" alt="Instructions" onclick="currentText = textWindow(textPaper, TEXTTYPE.INSTRUCT)"></td>
+                                    <td><input type="image" src="icons/instructions.png" alt="Instructions" onclick="return textWindow(textPaper,TEXTTYPE.INSTRUCT)"></td>
                                 </tr>
                                 <tr id="quit">
                                     <td><a href="htmlpages/quitpage.html"><img src="icons/quit.png" alt="Quit"></a></td>
@@ -51,10 +50,6 @@ and open the template in the editor.
                         </td>
                         <td class="gameText">
                             <div id="textPanel">
-                                <script>
-                                    textPaper = Raphael(document.getElementById('textPanel'), 280, 360);
-                                    textWindow(textPaper, currentText);
-                                </script>
                             </div>
                         </td>
                     </tr>
@@ -63,7 +58,7 @@ and open the template in the editor.
         </div>
         <div class="footers">
             <div id="debug">
-                Some debug text
+                text
             </div>
         </div>
         <div id="misc">
@@ -72,5 +67,9 @@ and open the template in the editor.
                 <source id="bton" src="music/Brighton.mp3" type="audio/mpeg">
             </audio>
         </div>
+        <script>
+            textPaper = Raphael(document.getElementById('textPanel'), 500, 380);
+            textWindow(textPaper, TEXTTYPE.GENERAL);
+        </script>
     </body>
 </html>
