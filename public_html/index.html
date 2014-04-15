@@ -8,12 +8,21 @@ and open the template in the editor.
     <head>
         <title>Start Page</title>
         <script src="js/maintextwindow.js" type="text/javascript"></script>
+        <script src="js/gamesinstructions.js" type="text/javascript"></script>
+        <script src="js/gamestats.js" type="text/javascript"></script>
+        <script src="js/generalText.js" type="text/javascript"></script>
         <script src="js/cnote.js" type="text/javascript"></script>
         <script src="js/readquestionxml.js" type="text/javascript"></script>
         <script src="js/libs/raphael/raphael-min.js" type="text/javascript"></script>
         <link type="text/css" rel="stylesheet" href="css/allpages.css"/>
         <script>
             var textPaper;
+            TEXTTYPE = {
+                INSTRUCT : "I",
+                STATS : "S",
+                GENERAL : "G"
+            };
+            var currentText = TEXTTYPE.GENERAL;
         </script>
     </head>
     <body>
@@ -30,10 +39,10 @@ and open the template in the editor.
                                     <td><a href="htmlpages/gamepage.html"><img src="icons/start.png" alt="Start"></a></td>
                                 </tr>
                                 <tr id="stats">
-                                    <td><input type="image" src="icons/stats.png" alt="Stats" onclick="gameStats(textPaper)"></td>
+                                    <td><input type="image" src="icons/stats.png" alt="Stats" onclick="currentText = textWindow(textPaper, TEXTTYPE.STATS)"></td>
                                 </tr>
                                 <tr id="instruction">
-                                    <td><input type="image" src="icons/instructions.png" alt="Instructions" onclick="gameInstructions(textPaper)"></td>
+                                    <td><input type="image" src="icons/instructions.png" alt="Instructions" onclick="currentText = textWindow(textPaper, TEXTTYPE.INSTRUCT)"></td>
                                 </tr>
                                 <tr id="quit">
                                     <td><a href="htmlpages/quitpage.html"><img src="icons/quit.png" alt="Quit"></a></td>
@@ -44,7 +53,7 @@ and open the template in the editor.
                             <div id="textPanel">
                                 <script>
                                     textPaper = Raphael(document.getElementById('textPanel'), 280, 360);
-                                    textWindow(textPaper);
+                                    textWindow(textPaper, currentText);
                                 </script>
                             </div>
                         </td>

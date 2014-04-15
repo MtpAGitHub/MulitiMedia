@@ -4,23 +4,22 @@
  * and open the template in the editor.
  */
 
-function textWindow(textPaper) {
-    var startText = textPaper.text(40, 40, "Some example text");
-    startText.attr(
-            {
-                'font-family': "arial",
-                'font-size': 24
-            }
-    );
-    startText.animate(
-            {
-                transform: 't80,80r360',
-                fill: 'white'
-            }
-    , 1000, 'ease-in');
+function textWindow(textPaper, outputText) {
+    if (outputText === "I") {
+        gameInstructions(textPaper);
+        return outputText.INSTRUCT;
+    } else if (outputText === "S") {
+        gameStats(textPaper);
+        return outputText.STATS;
+    } else if (outputText === "G") {
+        generalText(textPaper);
+        return outputText.GENERAL;
+    } else {
+        return;
+    }
 }
 
-
-function optionDebugMsg(a,b) {
-	document.getElementById("debug").innerHTML="Options debug>> " + a + ":" + b;
+function optionDebugMsg(a, b) {
+    document.getElementById("debug").innerHTML = "Options debug>> " + a + ":" + b;
+    alert("Stop !");
 }

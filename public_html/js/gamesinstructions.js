@@ -11,5 +11,3 @@ function gameInstructions(textPaper) {
 function instructionDebugMsg(a,b) {
 	document.getElementById("debug").innerHTML="Instruction debug>> " + a + ":" + b;
 }
-
-
