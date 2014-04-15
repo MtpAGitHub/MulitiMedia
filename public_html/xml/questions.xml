@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Quiz>
+    <Question id="1">
+        <Type>Music</Type>
+        <File>c4</File>
+        <Text>What note is this ?</Text>
+        <Option optId="1">C</Option>
+        <Option optId="2">C#</Option>
+        <Option optId="3">Cb</Option>
+        <Option optId="4">C7</Option>
+        <Answer>1</Answer>
+    </Question>
+    <Question id="2">
+        <Type>Question</Type>
+        <Text>What is the answer ?</Text>
+        <Option optId="1">Up</Option>
+        <Option optId="2">Down</Option>
+        <Option optId="3">Left</Option>
+        <Option optId="4">Right</Option>
+        <Answer>2</Answer>
+    </Question>
+    <Question id="3">
+        <Type>Animation</Type>
+        <AniFunc>shape</AniFunc>
+        <Text>What shape ?</Text>
+        <Option optId="1">Circle</Option>
+        <Option optId="2">Square</Option>
+        <Option optId="3">Triangle</Option>
+        <Option optId="4">Heptagon</Option>
+        <Answer>3</Answer>
+    </Question>
+</Quiz>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Start Page</title>
+        <script src="js/maintextwindow.js" type="text/javascript"></script>
+        <script src="js/cnote.js" type="text/javascript"></script>
+        <script src="js/readquestionxml.js" type="text/javascript"></script>
+        <script src="js/libs/raphael/raphael-min.js" type="text/javascript"></script>
+        <link type="text/css" rel="stylesheet" href="css/allpages.css"/>
+        <script>
+            var textPaper;
+        </script>
+    </head>
+    <body>
+        <div class="headers">
+            <h2><img src="icons/gametitle.png" alt="Multi Media Quiz Game"/></h2>
+        </div>
+        <div class="middle">
+            <form id="gameOptions">
+                <table id="mainTable">
+                    <tr>                        
+                        <td class="gameOptions">
+                            <table>
+                                <tr id="start">
+                                    <td><a href="htmlpages/gamepage.html"><img src="icons/start.png" alt="Start"></a></td>
+                                </tr>
+                                <tr id="stats">
+                                    <td><input type="image" src="icons/stats.png" alt="Stats" onclick="gameStats(textPaper)"></td>
+                                </tr>
+                                <tr id="instruction">
+                                    <td><input type="image" src="icons/instructions.png" alt="Instructions" onclick="gameInstructions(textPaper)"></td>
+                                </tr>
+                                <tr id="quit">
+                                    <td><a href="htmlpages/quitpage.html"><img src="icons/quit.png" alt="Quit"></a></td>
+                                </tr>                            
+                            </table>
+                        </td>
+                        <td class="gameText">
+                            <div id="textPanel">
+                                <script>
+                                    textPaper = Raphael(document.getElementById('textPanel'), 280, 360);
+                                    textWindow(textPaper);
+                                </script>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div class="footers">
+            <div id="debug">
+                Some debug text
+            </div>
+        </div>
+        <div id="misc">
+            <audio id="cnote">
+                <source id="c4" src="music/c4.mp3" type="audio/mpeg">
+                <source id="bton" src="music/Brighton.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    </body>
+</html>

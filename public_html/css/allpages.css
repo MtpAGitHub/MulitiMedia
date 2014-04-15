@@ -1,0 +1,60 @@
+body {
+    font-family: Geneva, sans-serif;
+    width: 1200px;
+    height: 800px;
+    background: -webkit-linear-gradient(#0052CC, #66A3FF); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#0052CC, #66A3FF); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#0052CC, #66A3FF); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#0052CC, #66A3FF); /* Standard syntax */
+}
+
+table {
+    margin: 5px;
+}
+
+td {
+    padding: 5px;
+}
+
+.gameOptions {
+    width: 600px;
+    height: 300px;
+    float: left;
+    margin : 10px 10px 10px 10px;
+}
+
+.gameText {
+    background-color: #66A3FF;
+    font-size: 105%;
+    margin : 10px 10px 10px 10px;
+    height : 300px;
+    width: 400px;
+    border: 2px solid white;
+}
+
+.headers {
+    color: red;
+    padding: 10px;
+    background-color: #003380;
+}
+
+.middle {
+    padding: 5px;
+    border: 1px solid black;
+    margin: 20px;
+    overflow: auto;
+    width: 95%;
+}
+
+.footers {
+    text-align: center;
+    background-color: #003380;
+    color: cyan;
+    padding: 5px;
+    clear: left;
+    margin: 10px;
+}
+
+h2 {
+    text-align: center;
+}
