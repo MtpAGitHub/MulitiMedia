@@ -44,6 +44,16 @@ td {
     width: 95%;
 }
 
+.gameMiddle {
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 15px;
+    margin: 20px;
+    overflow: auto;
+    width: 95%;
+    background-color: lightgray;
+}
+
 .footers {
     text-align: center;
     background-color: #003380;
@@ -53,6 +63,35 @@ td {
     margin: 10px;
     border: 2px solid white;
     border-radius: 15px;
+}
+
+.qgrid {
+    padding: 2px;
+    border: 2px solid lightgray;
+    border-radius: 5px;    
+    background: -webkit-linear-gradient(#0052CC, #66A3FF); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#0052CC, #66A3FF); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#0052CC, #66A3FF); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#0052CC, #66A3FF); /* Standard syntax */
+}
+
+.centreGrid, .questionGrid, .answerGrid{
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background: -webkit-linear-gradient(#0052CC, #66A3FF); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#0052CC, #66A3FF); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#0052CC, #66A3FF); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#0052CC, #66A3FF); /* Standard syntax */
+}
+
+.centreGrid {
+    width: 300px;
+}
+
+.answerGrid {
+    width: 500px;
 }
 
 h2 {
