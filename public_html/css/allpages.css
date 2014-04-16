@@ -24,9 +24,7 @@ td {
 .gameText {
     background-color: black;
     border-color: white;
-    font-size: 105%;
     margin : 10px 10px 10px 10px;
-    float: right;
 }
 
 .headers {

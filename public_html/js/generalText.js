@@ -4,6 +4,7 @@ function generalText(textPaper) {
     startText.attr(
             {
                 'font-family': "arial",
+                'text-anchor': "start",
                 'font-size': 24
             }
     );
