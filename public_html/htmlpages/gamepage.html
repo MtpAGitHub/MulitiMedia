@@ -29,19 +29,29 @@ and open the template in the editor.
                         <td class="questionGrid">
                             <table>
                                 <tr>
-                                    <td id="one" class="qgrid">
+                                    <td id="one" class="qgrid flip-container">
                                         <div class="flip-container">
                                             <div class="flipper">
                                                 <div class="front">
-                                                    <input type="image" src="../icons/questionmark.png" alt="One" onclick="return selectItem()">
+                                                    <input id="1" type="image" src="../icons/questionmark.png" alt="One" onclick="return selectItem(this.id)">
                                                 </div>
-                                                <div class="back">
-                                                    <img src="../icons/music.png" alt="music"> 
+                                                <div id="back1" class="back">
                                                 </div>
                                             </div>
-                                        </div>                                        
+                                        </div>
                                     </td>
-                                    <td id="two" class="qgrid"><img src="../icons/questionmark.png" alt="One"></td>
+                                    <td id="two" class="qgrid flip-container">
+                                        <div class="flip-container">
+                                            <div class="flipper">
+                                                <div class="front">
+                                                    <input id="2" type="image" src="../icons/questionmark.png" alt="Two" onclick="return selectItem(this.id)">
+                                                </div>
+                                                <div class="back">
+                                                    <img src="../icons/photo.png" alt="photo"> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
                                     <td id="three" class="qgrid"><img src="../icons/questionmark.png" alt="One"></td>
                                 </tr>
                                 <tr>
