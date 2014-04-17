@@ -10,13 +10,12 @@ and open the template in the editor.
         <script src="../js/startgame.js" type="text/javascript"></script>
         <script src="../js/cnote.js" type="text/javascript"></script>
         <script src="../js/readquestionxml.js" type="text/javascript"></script>
+        <script src="../js/timerdisp.js" type="text/javascript"></script>
+        <script src="../js/timerelements.js" type="text/javascript"></script>
         <script src="../js/libs/raphael/raphael-min.js" type="text/javascript"></script>
         <link type="text/css" rel="stylesheet" href="../css/allpages.css"/>
         <link type="text/css" rel="stylesheet" href="../css/tables.css"/>
         <link type="text/css" rel="stylesheet" href="../css/gamepage.css"/>
-        <script>
-            var questionPaper;
-        </script>
     </head>
     <body>
         <div class="headers">
@@ -48,7 +47,8 @@ and open the template in the editor.
                         <td class="centreGrid">
                             <table>
                                 <tr>
-                                    <td>Timer</td>
+                                    <td id="timerBox">
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>Scores</td>
@@ -59,21 +59,18 @@ and open the template in the editor.
                             <table class="questionAnswer">
                                 <tr>
                                     <td id="questionBox">
-                                        <script>
-                                        questionPaper = Raphael(document.getElementById("questionBox"),400,300);                                            
-                                        </script>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
                                         <table class="answerButtons">
                                             <tr>
-                                                <td>Answer A</td>
-                                                <td>Answer B</td>
+                                                <td><img src="../icons/answerA.png" alt="A"></td>
+                                                <td><img src="../icons/answerB.png" alt="B"></td>
                                             </tr>
                                             <tr>
-                                                <td>Answer C</td>
-                                                <td>Answer D</td>
+                                                <td><img src="../icons/answerC.png" alt="C"></td>
+                                                <td><img src="../icons/answerD.png" alt="D"></td>
                                             </tr>
                                         </table>                                        
                                     </td>
@@ -91,7 +88,8 @@ and open the template in the editor.
         </div>
         <div id="misc">
             <script>
-                gameStart(questionPaper);
+                timerDisp();
+                gameStart();
             </script>
             <audio id="cnote">
                 <source id="c4" src="sound/c4.mp3" type="audio/mpeg">

@@ -57,11 +57,12 @@ and open the template in the editor.
 }
 
 .answerButtons tr td {
-    background: red;
+    background: blueviolet;
     width: 120px;
     height: 80px;
     border: 2px solid white;
     border-radius: 5px;
+    text-align: center;
 }
 
 #questionBox {

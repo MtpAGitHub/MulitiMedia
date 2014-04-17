@@ -1,4 +1,5 @@
-function gameStart(questionPaper) {
+function gameStart() {
+    var questionPaper = Raphael(document.getElementById("questionBox"),400,300);                                            
     var questionText = questionPaper.text(0, 20, "Some starting question");
     questionText.attr(
             {
