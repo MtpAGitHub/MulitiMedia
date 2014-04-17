@@ -1,0 +1,56 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 17-Apr-2014, 16:15:46
+    Author     : MtpA
+*/
+
+
+/* entire container, keeps perspective */
+.flip-container {
+	-moz-perspective: 1000;
+}
+
+/* flip the pane when hovered */
+/*.flip-container:hover .flipper, .flip-container.hover .flipper, flip-container.flip .flipper { */
+.flip-container.flip .flipper {
+        transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+	width: 128px;
+	height: 128px;
+}
+
+/* flip speed goes here */
+.flipper {
+	-moz-transition: 0.6s;
+	-moz-transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	-moz-backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+}
+
+/* back, initially hidden pane */
+.back {
+	-moz-transform: rotateY(180deg);
+}

@@ -9,7 +9,12 @@ function gameStart() {
                 'fill': "white"
             }
     );
-    startDebugMsg("You pressed","START");
+}
+
+function selectItem() {
+    document.querySelector(".flip-container").classList.toggle("flip");
+    startDebugMsg("You pressed","flip");
+    return false;
 }
 
 function startDebugMsg(a,b) {

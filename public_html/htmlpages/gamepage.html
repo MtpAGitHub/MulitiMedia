@@ -16,6 +16,7 @@ and open the template in the editor.
         <link type="text/css" rel="stylesheet" href="../css/allpages.css"/>
         <link type="text/css" rel="stylesheet" href="../css/tables.css"/>
         <link type="text/css" rel="stylesheet" href="../css/gamepage.css"/>
+        <link type="text/css" rel="stylesheet" href="../css/imageflip.css"/>
     </head>
     <body>
         <div class="headers">
@@ -28,7 +29,18 @@ and open the template in the editor.
                         <td class="questionGrid">
                             <table>
                                 <tr>
-                                    <td id="one" class="qgrid"><img src="../icons/questionmark.png" alt="One"></td>
+                                    <td id="one" class="qgrid">
+                                        <div class="flip-container">
+                                            <div class="flipper">
+                                                <div class="front">
+                                                    <input type="image" src="../icons/questionmark.png" alt="One" onclick="return selectItem()">
+                                                </div>
+                                                <div class="back">
+                                                    <img src="../icons/music.png" alt="music"> 
+                                                </div>
+                                            </div>
+                                        </div>                                        
+                                    </td>
                                     <td id="two" class="qgrid"><img src="../icons/questionmark.png" alt="One"></td>
                                     <td id="three" class="qgrid"><img src="../icons/questionmark.png" alt="One"></td>
                                 </tr>
