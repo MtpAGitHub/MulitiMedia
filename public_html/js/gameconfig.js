@@ -7,7 +7,6 @@
 function configGame() {
     questions = new Array();
     randomQuestions = new Array();
-    questionPicked = new Array();
     questionPaper = Raphael(document.getElementById("questionBox"), 400, 300);
 
     getQuestions("questions.xml");
@@ -30,14 +29,28 @@ function setStartText() {
 }
 
 function randomizeQuestions() {
-    var done = false;
+    var questionPicked = new Array();
+    var questionCount = questions.length;
+    
+    for (var i = 0; i < 10; i++) {
+        questionPicked[i] = false;
+    }
+    while (questionCount > 0) {
+        var curNum = randomNumber(0,9);
+        if (!questionPicked[curNum]) {
+            randomQuestions.push(questions[curNum]);
+            questionPicked[curNum] = true;
+            questionCount--;
+        }
+    }
 }
 
 function showQuestions() {
-    var longString ="";
+    var longString = "";
     var selectedQuestion;
-    for (var i = 0; i < questions.length; i++) {
-        selectedQuestion = questions[i];
+    var noQuestions = randomQuestions.length;
+    for (var i = 0; i < noQuestions; i++) {
+        selectedQuestion = randomQuestions[i];
         longString = longString + "<" + i + ">" + selectedQuestion.type + "<>" + selectedQuestion.text + "<>" + selectedQuestion.oneopt + "<>" + selectedQuestion.twoopt + "<>" + selectedQuestion.threeopt + "<>" + selectedQuestion.fouropt + "<>" + selectedQuestion.answer + "\n";
     }
     alert(longString);
