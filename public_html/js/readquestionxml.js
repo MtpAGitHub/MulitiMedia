@@ -1,6 +1,7 @@
 function getQuestions(vFileName) {
     var questionXML = getXMLData(vFileName);
-    questions = loadQuestions(questionXML, questions);
+    var questions = loadQuestions(questionXML);
+    return questions;
 }
 
 function getXMLData(vFileName) {
@@ -13,7 +14,8 @@ function getXMLData(vFileName) {
     return xmlDoc;
 }
 
-function loadQuestions(vXMLDoc, questionArr) {
+function loadQuestions(vXMLDoc) {
+    var questionArr = new Array();
     var qlist = vXMLDoc.getElementsByTagName("Question");
     //loop through all the Question nodes
     for (i = 0; i < qlist.length; i++) {

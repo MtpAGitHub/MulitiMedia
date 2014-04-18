@@ -19,6 +19,10 @@ and open the template in the editor.
         <link type="text/css" rel="stylesheet" href="../css/tables.css"/>
         <link type="text/css" rel="stylesheet" href="../css/gamepage.css"/>
         <link type="text/css" rel="stylesheet" href="../css/imageflip.css"/>
+        
+        <script>
+            questionList = new Array();
+        </script>
     </head>
     <body>
         <div class="headers">
@@ -181,11 +185,10 @@ and open the template in the editor.
         </div>
         <div id="misc">
             <script>
-                configGame();
+                questionList = configGame();
             </script>
             <audio id="cnote">
-                <source id="c4" src="sound/c4.mp3" type="audio/mpeg">
-                <source id="bton" src="sound/Brighton.mp3" type="audio/mpeg">
+                <source id="c4" src="../sound/c4.mp3" type="audio/mpeg">
             </audio>
         </div>
     </body>

@@ -6,20 +6,71 @@ function questionEvent(pressedButton) {
     switch (pressedButton) {
         case "1":
             queryElement = "#one";
-            flipImage.src = "../icons/music.png";
-            flipElement = document.getElementById("back1");
-            flipElement.appendChild(flipImage);
             break;
         case "2":
             queryElement = "#two";
+            break;
+        case "3":
+            queryElement = "#three";
+            break;
+        case "4":
+            queryElement = "#four";
+            break;
+        case "5":
+            queryElement = "#five";
+            break;
+        case "6":
+            queryElement = "#six";
+            break;
+        case "7":
+            queryElement = "#seven";
+            break;
+        case "8":
+            queryElement = "#eight";
+            break;
+        case "9":
+            queryElement = "#nine";
             break;
         default:
             queryElement = "none";
             return false;
     }
+    flipImage.src = getFlipImage(pressedButton - 1);
+    flipElement = document.getElementById("back" + pressedButton);
+    flipElement.appendChild(flipImage);
     document.querySelector(queryElement).classList.toggle("flip");
     startDebugMsg(queryElement,pressedButton);
     return false;
+}
+
+function getFlipImage(arrayPos) {
+    var flipImage = "../icons/";
+    return flipImage = flipImage + matchImage(questionList[arrayPos].type);
+}
+
+function matchImage(imgElement) {
+    var imgType;
+    switch (imgElement) {
+        case "Sound":
+            imgType = "music.png";
+            break;
+        case "Question":
+            imgType = "Q.png";
+            break;
+        case "Animation":
+            imgType = "animation.png";
+            break;
+        case "Picture":
+            imgType = "photo.png";
+            break;
+        case "Video":
+            imgType = "movie.png";
+            break;
+        default:
+            imgType = "Q.png";
+            break;
+    }
+    return imgType;
 }
 
 function startDebugMsg(a,b) {
