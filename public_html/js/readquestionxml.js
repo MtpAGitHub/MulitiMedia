@@ -1,5 +1,4 @@
 function getQuestions(vFileName) {
-    var questions = new Array();
     var questionXML = getXMLData(vFileName);
     questions = loadQuestions(questionXML, questions);
 }
@@ -8,7 +7,7 @@ function getXMLData(vFileName) {
     if (window.XMLHttpRequest) {
         xmlhttp = new XMLHttpRequest();
     }
-    xmlhttp.open("GET", "xml/" + vFileName, false);
+    xmlhttp.open("GET", "../xml/" + vFileName, false);
     xmlhttp.send();
     xmlDoc = xmlhttp.responseXML;
     return xmlDoc;
@@ -22,7 +21,7 @@ function loadQuestions(vXMLDoc, questionArr) {
         children = vXMLDoc.getElementsByTagName("Question")[i].childNodes;
         child = vXMLDoc.getElementsByTagName("Question")[i].firstChild;
         for (j = 0; j < children.length; j++) {
-            if (child.nodeType == 1) {
+            if (child.nodeType === 1) {
                 curQuestion = processElement(child, curQuestion);
             }
             child = child.nextSibling;
@@ -47,7 +46,7 @@ function processElement(vCurElement, curQuestion) {
             curQuestion.func = vCurElement.firstChild.nodeValue;
             break;
         case "Option":
-            var optNo = parseInt(vCurElement.getAttribute("id"));
+            var optNo = parseInt(vCurElement.getAttribute("optId"));
             switch (optNo) {
                 case 1:
                     curQuestion.oneopt = vCurElement.firstChild.nodeValue;

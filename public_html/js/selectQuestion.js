@@ -1,17 +1,4 @@
-function gameStart() {
-    var questionPaper = Raphael(document.getElementById("questionBox"),400,300);                                            
-    var questionText = questionPaper.text(0, 20, "Some starting question");
-    questionText.attr(
-            {
-                'font-family': "arial",
-                'font-size': 24,
-                'text-anchor': "start",
-                'fill': "white"
-            }
-    );
-}
-
-function selectItem(pressedButton) {
+function questionEvent(pressedButton) {
     var queryElement;
     var flipImage = document.createElement("img");
     var flipElement;
@@ -28,7 +15,7 @@ function selectItem(pressedButton) {
             break;
         default:
             queryElement = "none";
-            break;
+            return false;
     }
     document.querySelector(queryElement).classList.toggle("flip");
     startDebugMsg(queryElement,pressedButton);

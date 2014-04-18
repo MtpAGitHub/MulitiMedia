@@ -2,7 +2,7 @@
 <Quiz>
     <Question id="1">
         <Type>Sound</Type>
-        <File>c4</File>
+        <File>c4.mpg</File>
         <Text>What note is this ?</Text>
         <Option optId="1">C</Option>
         <Option optId="2">C#</Option>
@@ -31,7 +31,7 @@
     </Question>
     <Question id="4">
         <Type>Picture</Type>
-        <File>blur</File>
+        <File>blur.jpg</File>
         <Text>What effect ?</Text>
         <Option optId="1">Colour</Option>
         <Option optId="2">Edge</Option>
@@ -41,7 +41,7 @@
     </Question>
     <Question id="5">
         <Type>Video</Type>
-        <File>vid1</File>
+        <File>vid1.avi</File>
         <Text>What inserted ?</Text>
         <Option optId="1">Circle</Option>
         <Option optId="2">Square</Option>
@@ -51,7 +51,7 @@
     </Question>
     <Question id="6">
         <Type>Picture</Type>
-        <File>bird</File>
+        <File>bird.jpg</File>
         <Text>What is it ?</Text>
         <Option optId="1">Bird</Option>
         <Option optId="2">Plane</Option>
@@ -61,7 +61,7 @@
     </Question>
     <Question id="7">
         <Type>Sound</Type>
-        <File>harp</File>
+        <File>harp.mpg</File>
         <Text>What instrument ?</Text>
         <Option optId="1">Harp</Option>
         <Option optId="2">Flute</Option>
