@@ -6,9 +6,12 @@
 
 function configGame() {
     questions = new Array();
+    randomQuestions = new Array();
+    questionPicked = new Array();
     questionPaper = Raphael(document.getElementById("questionBox"), 400, 300);
 
     getQuestions("questions.xml");
+    randomizeQuestions();
     showQuestions();
     setStartText();
     timerDisp();
@@ -24,6 +27,10 @@ function setStartText() {
                 'fill': "white"
             }
     );
+}
+
+function randomizeQuestions() {
+    var done = false;
 }
 
 function showQuestions() {
