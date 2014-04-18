@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <Quiz>
     <Question id="1">
-        <Type>Music</Type>
+        <Type>Sound</Type>
         <File>c4</File>
         <Text>What note is this ?</Text>
         <Option optId="1">C</Option>
         <Option optId="2">C#</Option>
         <Option optId="3">Cb</Option>
         <Option optId="4">C7</Option>
-        <Answer>1</Answer>
+        <Answer>A</Answer>
     </Question>
     <Question id="2">
         <Type>Question</Type>
@@ -17,7 +17,7 @@
         <Option optId="2">Down</Option>
         <Option optId="3">Left</Option>
         <Option optId="4">Right</Option>
-        <Answer>2</Answer>
+        <Answer>B</Answer>
     </Question>
     <Question id="3">
         <Type>Animation</Type>
@@ -27,6 +27,65 @@
         <Option optId="2">Square</Option>
         <Option optId="3">Triangle</Option>
         <Option optId="4">Heptagon</Option>
-        <Answer>3</Answer>
+        <Answer>C</Answer>
+    </Question>
+    <Question id="4">
+        <Type>Picture</Type>
+        <File>blur</File>
+        <Text>What effect ?</Text>
+        <Option optId="1">Colour</Option>
+        <Option optId="2">Edge</Option>
+        <Option optId="3">B and W</Option>
+        <Option optId="4">Blur</Option>
+        <Answer>D</Answer>
+    </Question>
+    <Question id="5">
+        <Type>Video</Type>
+        <File>vid1</File>
+        <Text>What inserted ?</Text>
+        <Option optId="1">Circle</Option>
+        <Option optId="2">Square</Option>
+        <Option optId="3">Triangle</Option>
+        <Option optId="4">Heptagon</Option>
+        <Answer>A</Answer>
+    </Question>
+    <Question id="6">
+        <Type>Picture</Type>
+        <File>bird</File>
+        <Text>What is it ?</Text>
+        <Option optId="1">Bird</Option>
+        <Option optId="2">Plane</Option>
+        <Option optId="3">Superman</Option>
+        <Option optId="4">None</Option>
+        <Answer>B</Answer>
+    </Question>
+    <Question id="7">
+        <Type>Sound</Type>
+        <File>harp</File>
+        <Text>What instrument ?</Text>
+        <Option optId="1">Harp</Option>
+        <Option optId="2">Flute</Option>
+        <Option optId="3">Piano</Option>
+        <Option optId="4">Drum</Option>
+        <Answer>C</Answer>
+    </Question>
+    <Question id="8">
+        <Type>Question</Type>
+        <Text>What type of graphic</Text>
+        <Option optId="1">Mine</Option>
+        <Option optId="2">Yours</Option>
+        <Option optId="3">Hers</Option>
+        <Option optId="4">Theirs</Option>
+        <Answer>D</Answer>
+    </Question>
+    <Question id="9">
+        <Type>Animation</Type>
+        <AniFunc>move</AniFunc>
+        <Text>What movement ?</Text>
+        <Option optId="1">Circle</Option>
+        <Option optId="2">Square</Option>
+        <Option optId="3">Triangle</Option>
+        <Option optId="4">Heptagon</Option>
+        <Answer>A</Answer>
     </Question>
 </Quiz>
