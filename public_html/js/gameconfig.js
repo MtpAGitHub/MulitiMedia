@@ -3,14 +3,15 @@
  * 120414   MtpA    Created script
  */
 
-function configGame(displayBoxPaper, questionBoxPaper, timerBoxPaper, scoresBoxPaper) {
+function configGame(configBoxes) {
     var questions = getQuestions("questions.xml");
     var randomisedQuestions = randomizeQuestions(questions);
 
-    windowAnimate(displayBoxPaper);
-    setQuestionText(questionBoxPaper, "Pick a square !", 200, 20);
-    timerDisp(timerBoxPaper);
-    setScoreText(scoresBoxPaper, "Score: 0");
+    windowAnimate(configBoxes.displayBoxPaper);
+    setQuestionText(configBoxes.questionBoxPaper, "Pick a square !", 20, 20);
+    displayAnswers("Answer A", "Answer B", "Answer C", "Answer D");
+    timerDisp(configBoxes.timerBoxPaper);
+    setScoreText(configBoxes.scoresBoxPaper, "Score: 0");
     return randomisedQuestions;
 }
 

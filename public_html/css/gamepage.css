@@ -59,8 +59,8 @@ and open the template in the editor.
 
 .answerButtons tr td {
     background: blueviolet;
-    width: 120px;
-    height: 80px;
+    width: 280px;
+    height: 60px;
     border: 2px solid white;
     border-radius: 5px;
     text-align: center;

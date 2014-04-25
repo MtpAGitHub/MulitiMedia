@@ -32,3 +32,21 @@ function windowAnimate(displayBox) {
             'linear'
     );
 }
+
+function setDisplayWindowText(displayPaper, questionText, xpos, ypos) {
+    displayPaper.clear();
+    var questionText = displayPaper.text(xpos, ypos, questionText);
+    questionText.attr(
+            {
+                'font-family': "arial",
+                'font-size': 24,
+                'fill': "white",
+                'text-anchor': 'start'
+            }
+    );
+}
+
+function setDisplayWindowImage(displayPaper, displayImage, xpos, ypos, width, height) {
+    displayPaper.clear();
+    var btonImage = displayPaper.image(displayImage, xpos, ypos, width, height);    
+}

@@ -2,12 +2,12 @@
 <Quiz>
     <Question id="1">
         <Type>Sound</Type>
-        <File>c4.mpg</File>
-        <Text>What note is this ?</Text>
-        <Option optId="1">C</Option>
-        <Option optId="2">C#</Option>
-        <Option optId="3">Cb</Option>
-        <Option optId="4">C7</Option>
+        <File>gong.mp3</File>
+        <Text>What sound is this ?</Text>
+        <Option optId="1">Gong</Option>
+        <Option optId="2">Harp</Option>
+        <Option optId="3">Drum</Option>
+        <Option optId="4">Piano</Option>
         <Answer>A</Answer>
     </Question>
     <Question id="2">
@@ -31,12 +31,12 @@
     </Question>
     <Question id="4">
         <Type>Picture</Type>
-        <File>blur.jpg</File>
-        <Text>What effect ?</Text>
-        <Option optId="1">Colour</Option>
-        <Option optId="2">Edge</Option>
-        <Option optId="3">B and W</Option>
-        <Option optId="4">Blur</Option>
+        <File>nogreen.jpg</File>
+        <Text>What colour has been removed ?</Text>
+        <Option optId="1">Red</Option>
+        <Option optId="2">White</Option>
+        <Option optId="3">Blue</Option>
+        <Option optId="4">Green</Option>
         <Answer>D</Answer>
     </Question>
     <Question id="5">
@@ -51,23 +51,23 @@
     </Question>
     <Question id="6">
         <Type>Picture</Type>
-        <File>bird.jpg</File>
-        <Text>What is it ?</Text>
-        <Option optId="1">Bird</Option>
-        <Option optId="2">Plane</Option>
-        <Option optId="3">Superman</Option>
-        <Option optId="4">None</Option>
-        <Answer>B</Answer>
+        <File>butterflyedge.jpg</File>
+        <Text>What process has been applied ?</Text>
+        <Option optId="1">Negative</Option>
+        <Option optId="2">Blank and white</Option>
+        <Option optId="3">Edging</Option>
+        <Option optId="4">Sharpening</Option>
+        <Answer>C</Answer>
     </Question>
     <Question id="7">
         <Type>Sound</Type>
-        <File>harp.mpg</File>
-        <Text>What instrument ?</Text>
-        <Option optId="1">Harp</Option>
-        <Option optId="2">Flute</Option>
-        <Option optId="3">Piano</Option>
-        <Option optId="4">Drum</Option>
-        <Answer>C</Answer>
+        <File>wahwah.mp3</File>
+        <Text>What effect has been applied ?</Text>
+        <Option optId="1">Distortion</Option>
+        <Option optId="2">Reverb</Option>
+        <Option optId="3">Echo</Option>
+        <Option optId="4">Wah Wah</Option>
+        <Answer>D</Answer>
     </Question>
     <Question id="8">
         <Type>Question</Type>
@@ -76,7 +76,7 @@
         <Option optId="2">Yours</Option>
         <Option optId="3">Hers</Option>
         <Option optId="4">Theirs</Option>
-        <Answer>D</Answer>
+        <Answer>A</Answer>
     </Question>
     <Question id="9">
         <Type>Animation</Type>
@@ -86,7 +86,7 @@
         <Option optId="2">Square</Option>
         <Option optId="3">Triangle</Option>
         <Option optId="4">Heptagon</Option>
-        <Answer>A</Answer>
+        <Answer>B</Answer>
     </Question>
     <Question id="10">
         <Type>Animation</Type>
@@ -96,26 +96,26 @@
         <Option optId="2">Middle</Option>
         <Option optId="3">Bottom</Option>
         <Option optId="4">Nowhere</Option>
-        <Answer>A</Answer>
+        <Answer>C</Answer>
     </Question>
     <Question id="11">
         <Type>Picture</Type>
-        <File>boat.jpg</File>
-        <Text>What happened to it ?</Text>
-        <Option optId="1">Black</Option>
-        <Option optId="2">Blue</Option>
-        <Option optId="3">Green</Option>
-        <Option optId="4">Red</Option>
-        <Answer>B</Answer>
+        <File>blur.jpg</File>
+        <Text>What filter has been applied ?</Text>
+        <Option optId="1">Gaussian Blur</Option>
+        <Option optId="2">Bad camera work</Option>
+        <Option optId="3">Sharpening</Option>
+        <Option optId="4">Grey scale</Option>
+        <Answer>A</Answer>
     </Question>
     <Question id="12">
         <Type>Sound</Type>
-        <File>cello.mpg</File>
-        <Text>What instrument ?</Text>
-        <Option optId="1">Cello</Option>
-        <Option optId="2">Guitar</Option>
-        <Option optId="3">Tuba</Option>
-        <Option optId="4">Washboard</Option>
-        <Answer>A</Answer>
+        <File>hipass.mp3</File>
+        <Text>What filter has been applied ?</Text>
+        <Option optId="1">Mute Filter</Option>
+        <Option optId="2">Hi Pass Filter</Option>
+        <Option optId="3">Lo Pass Filter</Option>
+        <Option optId="4">Fade Filter</Option>
+        <Answer>B</Answer>
     </Question>
 </Quiz>
