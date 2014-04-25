@@ -1,56 +1,17 @@
 /* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * 250414   MtpA    Major revision to take out functionality for display and question into seperate scripts
+ * 120414   MtpA    Created script
  */
 
-function configGame() {
-    displayBox = Raphael(document.getElementById("displayWindow"), 600, 300);
-    questionPaper = Raphael(document.getElementById("questionBox"), 600, 60);
-
+function configGame(displayBoxPaper, questionBoxPaper, timerBoxPaper, scoresBoxPaper) {
     var questions = getQuestions("questions.xml");
     var randomisedQuestions = randomizeQuestions(questions);
-    windowAnimate();
-    setStartText();
-    timerDisp();
+
+    windowAnimate(displayBoxPaper);
+    setQuestionText(questionBoxPaper, "Pick a square !", 300, 20);
+    timerDisp(timerBoxPaper);
+    setScoreText(scoresBoxPaper, "Score: 0");
     return randomisedQuestions;
-}
-
-function windowAnimate() {
-    var canvasBox = displayBox.rect(0,0,700,300);
-    canvasBox.attr(
-            {
-                fill:'black',
-                stroke: 'gray',
-                'stroke-width': 2
-            }
-    );
-    var bouncingBall = displayBox.circle(20, 20, 15);
-    bouncingBall.attr(
-            {
-                fill: '0-#00A3BF-#0AF424',
-                stroke: 'gray',
-                'stroke-width': 2
-            }
-    );
-    bouncingBall.animate (
-            {
-                transform: 't560,100r360'
-            },
-            750,
-            'linear'
-    );
-}
-
-function setStartText() {
-    var questionText = questionPaper.text(300, 20, "Pick a square !");
-    questionText.attr(
-            {
-                'font-family': "arial",
-                'font-size': 24,
-                'fill': "white"
-            }
-    );
 }
 
 function randomizeQuestions(questions) {
