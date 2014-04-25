@@ -8,7 +8,7 @@ function configGame(displayBoxPaper, questionBoxPaper, timerBoxPaper, scoresBoxP
     var randomisedQuestions = randomizeQuestions(questions);
 
     windowAnimate(displayBoxPaper);
-    setQuestionText(questionBoxPaper, "Pick a square !", 300, 20);
+    setQuestionText(questionBoxPaper, "Pick a square !", 200, 20);
     timerDisp(timerBoxPaper);
     setScoreText(scoresBoxPaper, "Score: 0");
     return randomisedQuestions;

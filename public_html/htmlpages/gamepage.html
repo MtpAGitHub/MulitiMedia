@@ -7,19 +7,32 @@ and open the template in the editor.
 <html>
     <head>
         <title>Game Play Page</title>
-        <script src="../js/scoredisplay.js" type="text/javascript"></script>
+        <!-- libraries -->
+        <script src="../js/libs/raphael/raphael-min.js" type="text/javascript"></script>
+
+        <!-- questions -->
+        <script src="../js/questions/questionwindow.js" type="text/javascript"></script>
+        <script src="../js/questions/displayquestion.js" type="text/javascript"></script>
+
+        <!-- score -->
+        <script src="../js/score/scoredisplay.js" type="text/javascript"></script>
+
+        <!-- sound -->
+        <script src="../js/sound/playsound.js" type="text/javascript"></script>
+
+        <!-- timer -->
+        <script src="../js/timer/timerdisp.js" type="text/javascript"></script>
+        <script src="../js/timer/timerelements.js" type="text/javascript"></script>
+
+        <!-- common -->
+        <script src="../js/readquestionxml.js" type="text/javascript"></script>
         <script src="../js/displaywindow.js" type="text/javascript"></script>
-        <script src="../js/questionwindow.js" type="text/javascript"></script>
-        <script src="../js/displayquestion.js" type="text/javascript"></script>
         <script src="../js/selectQuestion.js" type="text/javascript"></script>
         <script src="../js/turnimage.js" type="text/javascript"></script>
-        <script src="../js/cnote.js" type="text/javascript"></script>
-        <script src="../js/readquestionxml.js" type="text/javascript"></script>
-        <script src="../js/timerdisp.js" type="text/javascript"></script>
-        <script src="../js/timerelements.js" type="text/javascript"></script>
         <script src="../js/gameconfig.js" type="text/javascript"></script>
         <script src="../js/randomnumber.js" type="text/javascript"></script>
-        <script src="../js/libs/raphael/raphael-min.js" type="text/javascript"></script>
+
+        <!-- stylesheets -->
         <link type="text/css" rel="stylesheet" href="../css/allpages.css"/>
         <link type="text/css" rel="stylesheet" href="../css/tables.css"/>
         <link type="text/css" rel="stylesheet" href="../css/gamepage.css"/>
@@ -207,7 +220,7 @@ and open the template in the editor.
                 var scoresBoxPaper = setScoresBoxPaper(256,128);
                 var questionList = configGame(displayBoxPaper, questionBoxPaper, timerBoxPaper, scoresBoxPaper);
             </script>
-            <audio id="cnote">
+            <audio id="sound">
                 <source id="c4" src="../sound/testproject.mp3" type="audio/mpeg">
             </audio>
         </div>

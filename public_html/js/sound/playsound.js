@@ -1,7 +1,7 @@
 function startSound(soundID, songID) {
-	var cNote = document.getElementById(soundID);
-	cNote.src = document.getElementById(songID).getAttribute("src");
-	cNote.play();
+	var quizSound = document.getElementById(soundID);
+	quizSound.src = document.getElementById(songID).getAttribute("src");
+	quizSound.play();
 	soundDebugMsg("Got here","");
 }
 
