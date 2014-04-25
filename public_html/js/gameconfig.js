@@ -5,23 +5,49 @@
  */
 
 function configGame() {
-    questionPaper = Raphael(document.getElementById("questionBox"), 400, 300);
+    displayBox = Raphael(document.getElementById("displayWindow"), 600, 300);
+    questionPaper = Raphael(document.getElementById("questionBox"), 600, 60);
 
     var questions = getQuestions("questions.xml");
     var randomisedQuestions = randomizeQuestions(questions);
-    showQuestions(randomisedQuestions);
+    windowAnimate();
     setStartText();
     timerDisp();
     return randomisedQuestions;
 }
 
+function windowAnimate() {
+    var canvasBox = displayBox.rect(0,0,700,300);
+    canvasBox.attr(
+            {
+                fill:'black',
+                stroke: 'gray',
+                'stroke-width': 2
+            }
+    );
+    var bouncingBall = displayBox.circle(20, 20, 15);
+    bouncingBall.attr(
+            {
+                fill: '0-#00A3BF-#0AF424',
+                stroke: 'gray',
+                'stroke-width': 2
+            }
+    );
+    bouncingBall.animate (
+            {
+                transform: 't560,100r360'
+            },
+            750,
+            'linear'
+    );
+}
+
 function setStartText() {
-    var questionText = questionPaper.text(0, 20, "Pick a square !");
+    var questionText = questionPaper.text(300, 20, "Pick a square !");
     questionText.attr(
             {
                 'font-family': "arial",
                 'font-size': 24,
-                'text-anchor': "start",
                 'fill': "white"
             }
     );
@@ -35,12 +61,13 @@ function randomizeQuestions(questions) {
     for (var i = 0; i < questionCount; i++) {
         questionPicked[i] = false;
     }
-    while (questionCount > 0) {
-        var curNum = randomNumber(0,8);
+    var gridLimit = 9;
+    while (gridLimit > 0) {
+        var curNum = randomNumber(0,questionCount-1);
         if (!questionPicked[curNum]) {
             randomQuestions.push(questions[curNum]);
             questionPicked[curNum] = true;
-            questionCount--;
+            gridLimit--;
         }
     }
     return randomQuestions;

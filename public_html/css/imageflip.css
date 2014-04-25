@@ -24,8 +24,8 @@ and open the template in the editor.
 }
 
 .flip-container, .front, .back {
-	width: 128px;
-	height: 128px;
+	width: 64px;
+	height: 64px;
 }
 
 /* flip speed goes here */

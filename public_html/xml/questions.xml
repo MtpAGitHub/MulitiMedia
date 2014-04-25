@@ -21,7 +21,7 @@
     </Question>
     <Question id="3">
         <Type>Animation</Type>
-        <AniFunc>shape</AniFunc>
+        <AniFunc>a1</AniFunc>
         <Text>What shape ?</Text>
         <Option optId="1">Circle</Option>
         <Option optId="2">Square</Option>
@@ -80,12 +80,42 @@
     </Question>
     <Question id="9">
         <Type>Animation</Type>
-        <AniFunc>move</AniFunc>
+        <AniFunc>a2</AniFunc>
         <Text>What movement ?</Text>
         <Option optId="1">Circle</Option>
         <Option optId="2">Square</Option>
         <Option optId="3">Triangle</Option>
         <Option optId="4">Heptagon</Option>
+        <Answer>A</Answer>
+    </Question>
+    <Question id="10">
+        <Type>Animation</Type>
+        <AniFunc>a3</AniFunc>
+        <Text>Where to ?</Text>
+        <Option optId="1">Top</Option>
+        <Option optId="2">Middle</Option>
+        <Option optId="3">Bottom</Option>
+        <Option optId="4">Nowhere</Option>
+        <Answer>A</Answer>
+    </Question>
+    <Question id="11">
+        <Type>Picture</Type>
+        <File>boat.jpg</File>
+        <Text>What happened to it ?</Text>
+        <Option optId="1">Black</Option>
+        <Option optId="2">Blue</Option>
+        <Option optId="3">Green</Option>
+        <Option optId="4">Red</Option>
+        <Answer>B</Answer>
+    </Question>
+    <Question id="12">
+        <Type>Sound</Type>
+        <File>cello.mpg</File>
+        <Text>What instrument ?</Text>
+        <Option optId="1">Cello</Option>
+        <Option optId="2">Guitar</Option>
+        <Option optId="3">Tuba</Option>
+        <Option optId="4">Washboard</Option>
         <Answer>A</Answer>
     </Question>
 </Quiz>

@@ -52,22 +52,22 @@ function matchImage(imgElement) {
     var imgType;
     switch (imgElement) {
         case "Sound":
-            imgType = "music.png";
+            imgType = "music64.png";
             break;
         case "Question":
-            imgType = "Q.png";
+            imgType = "Q64.png";
             break;
         case "Animation":
-            imgType = "animation.png";
+            imgType = "animation64.png";
             break;
         case "Picture":
-            imgType = "photo.png";
+            imgType = "photo64.png";
             break;
         case "Video":
-            imgType = "movie.png";
+            imgType = "movie64.png";
             break;
         default:
-            imgType = "Q.png";
+            imgType = "Q64.png";
             break;
     }
     return imgType;
