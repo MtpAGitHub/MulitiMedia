@@ -5,6 +5,7 @@
 function answerEvent(pressedButton, questionList, displayBoxPaper, questionBoxPaper, timerBoxPaper, scoresBoxPaper) {
     var soundContainer = document.getElementById("sound");
     soundContainer.pause();
+    stopTimer(questionTimer);
 }
 
 function answerDebugMsg(a, b) {

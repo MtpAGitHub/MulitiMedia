@@ -1,6 +1,8 @@
 function questionEvent(pressedButton, questionList, questionBoxes) {    
     var questionArrayPos = pressedButton -1;
     var curQuestion = questionList[questionArrayPos];
+    var curTime = 10;
+    var countdownTime = 1000;
     curAnswer = curQuestion.answer;
     
     turnImage(pressedButton, questionList);
@@ -9,6 +11,7 @@ function questionEvent(pressedButton, questionList, questionBoxes) {
     switch (curQuestion.type) {
         case "Sound":
             startSound(questionBoxes.displayBoxPaper, "sound", curQuestion.file);
+            countdownTime = 2000;
             break;
         case "Question":
             questionAnimate(questionBoxes.displayBoxPaper);
@@ -24,6 +27,7 @@ function questionEvent(pressedButton, questionList, questionBoxes) {
             break;
         default:
             break;
-    }    
+    }
+    questionTimer = startTimer(questionBoxes.timerBoxPaper ,curTime, countdownTime);
     return false;
 }

@@ -6,11 +6,12 @@
 function configGame(configBoxes) {
     var questions = getQuestions("questions.xml");
     var randomisedQuestions = randomizeQuestions(questions);
+    var startTime = 9;
 
     windowAnimate(configBoxes.displayBoxPaper);
     setQuestionText(configBoxes.questionBoxPaper, "Pick a square !", 20, 20);
     displayAnswers("Answer A", "Answer B", "Answer C", "Answer D");
-    timerDisp(configBoxes.timerBoxPaper);
+    timerDisp(configBoxes.timerBoxPaper, startTime);
     setScoreText(configBoxes.scoresBoxPaper, "Score: 0");
     return randomisedQuestions;
 }
