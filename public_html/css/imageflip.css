@@ -9,34 +9,22 @@ and open the template in the editor.
 */
 
 
-/* entire container, keeps perspective */
-.flip-container {
-	-moz-perspective: 1000;
+.pictureBox {
+	-moz-perspective: 1000px;
 }
 
-/* flip the pane when hovered */
-/*.flip-container:hover .flipper, .flip-container.hover .flipper, flip-container.flip .flipper { */
-.flip-container.flip .flipper {
+.pictureBox.turn .pictureTurner {
+        -moz-transform: rotateY(180deg);
         transform: rotateY(180deg);
         -webkit-transform: rotateY(180deg);
         -ms-transform: rotateY(180deg);
-        -moz-transform: rotateY(180deg);
 }
 
-.flip-container, .front, .back {
+.pictureBox, .front, .back {
 	width: 64px;
 	height: 64px;
 }
 
-/* flip speed goes here */
-.flipper {
-	-moz-transition: 0.6s;
-	-moz-transform-style: preserve-3d;
-
-	position: relative;
-}
-
-/* hide back of pane during swap */
 .front, .back {
 	-moz-backface-visibility: hidden;
 
@@ -45,12 +33,17 @@ and open the template in the editor.
 	left: 0;
 }
 
-/* front pane, placed above back */
 .front {
 	z-index: 2;
 }
 
-/* back, initially hidden pane */
 .back {
 	-moz-transform: rotateY(180deg);
+}
+
+.pictureTurner {
+	-moz-transition: 0.7s;
+	-moz-transform-style: preserve-3d;
+
+	position: relative;
 }

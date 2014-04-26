@@ -4,8 +4,8 @@
 
 function turnImage(pressedButton, questionList) {
     var queryElement;
-    var flipImage = document.createElement("img");
-    var flipElement;
+    var turnImage = document.createElement("img");
+    var turnElement;
     var arrayPos = pressedButton -1;
     
     switch (pressedButton) {
@@ -40,10 +40,10 @@ function turnImage(pressedButton, questionList) {
             queryElement = "none";
             return false;
     }
-    flipImage.src = "../icons/" + matchImage(questionList[arrayPos].type);
-    flipElement = document.getElementById("back" + pressedButton);
-    flipElement.appendChild(flipImage);
-    document.querySelector(queryElement).classList.toggle("flip");
+    turnImage.src = "../icons/" + matchImage(questionList[arrayPos].type);
+    turnElement = document.getElementById("back" + pressedButton);
+    turnElement.appendChild(turnImage);
+    document.querySelector(queryElement).classList.toggle("turn");
     startDebugMsg(queryElement,pressedButton);    
 }
 

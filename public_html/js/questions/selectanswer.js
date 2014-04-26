@@ -2,7 +2,7 @@
  * 250414   MtpA    Created script
  */
 
-function answerEvent(pressedButton, questionList, displayBoxPaper, questionBoxPaper, timerBoxPaper, scoresBoxPaper) {
+function answerEvent(pressedButton, questionList, answerBoxes) {
     var soundContainer = document.getElementById("sound");
     soundContainer.pause();
     stopTimer(questionTimer);
