@@ -63,3 +63,7 @@ function toggleDisplayWindow(displayPaper, displayType) {
             break;
     }
 }
+
+function questionDebugMsg(a, b) {
+    document.getElementById("debug").innerHTML = "Debug>>" + a + ":" + b;
+}

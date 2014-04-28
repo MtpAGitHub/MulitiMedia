@@ -1,11 +1,12 @@
 /* 
+ * 280414   MtpA    Forgot to change canvas name for raphaelCanvas so was not 'swapping' windows properly
  * 280414   MtpA    Amended to accept class instead of id for displayWindow
  * 250414   MtpA    Create script
  */
 
 
 function setDisplayWindow(width, height) {
-    return Raphael(document.getElementsByClassName("displayWindow")[0], width, height);
+    return Raphael(document.getElementsByClassName("raphaelCanvas")[0], width, height);
 }
 
 function windowAnimate(displayBox) {
