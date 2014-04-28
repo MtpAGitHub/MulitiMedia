@@ -1,3 +1,9 @@
+/* 
+ * 
+ * 280414   MtpA    Add question functions to questions object and rename func to aniFunc (for animation function name)
+ * 180314   MtpA    Create script
+ */
+
 function getQuestions(vFileName) {
     var questionXML = getXMLData(vFileName);
     var questions = loadQuestions(questionXML);
@@ -45,8 +51,11 @@ function processElement(vCurElement, curQuestion) {
             curQuestion.text = vCurElement.firstChild.nodeValue;
             break;
         case "AniFunc":
-            curQuestion.func = vCurElement.firstChild.nodeValue;
+            curQuestion.aniFunc = vCurElement.firstChild.nodeValue;
             break;
+        case "QFunc":
+            curQuestion.qFunc = vCurElement.firstChild.nodeValue;
+            break;        
         case "Option":
             var optNo = parseInt(vCurElement.getAttribute("optId"));
             switch (optNo) {

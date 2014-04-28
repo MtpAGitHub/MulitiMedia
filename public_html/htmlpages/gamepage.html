@@ -15,6 +15,7 @@ and open the template in the editor.
         <script src="../js/questions/processquestions.js" type="text/javascript"></script>
         <script src="../js/questions/selectQuestion.js" type="text/javascript"></script>
         <script src="../js/questions/selectanswer.js" type="text/javascript"></script>
+        <script src="../js/questions/questionfunctions.js" type="text/javascript"></script>
 
         <!-- score -->
         <script src="../js/score/scoredisplay.js" type="text/javascript"></script>
@@ -185,7 +186,16 @@ and open the template in the editor.
                         <td class="answerGrid">
                             <table class="questionAnswer">
                                 <tr>
-                                    <td id="displayWindow"></td>
+                                    <td class="displayWindow">
+                                        <div class="raphaelCanvas">
+                                            
+                                        </div>
+                                        <div class="movie">
+                                            <video class="pageVideo" controls>
+                                              <source class="videoSource" src="../video/assignment_x264.mp4" type="video/mp4" />
+                                            </video>
+                                        </div>                                      
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>

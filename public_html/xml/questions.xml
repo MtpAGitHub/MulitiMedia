@@ -12,11 +12,12 @@
     </Question>
     <Question id="2">
         <Type>Question</Type>
-        <Text>What is the answer ?</Text>
-        <Option optId="1">Up</Option>
-        <Option optId="2">Down</Option>
-        <Option optId="3">Left</Option>
-        <Option optId="4">Right</Option>
+        <QFunc>q1</QFunc>
+        <Text>What does the line L represent ?</Text>
+        <Option optId="1">Wavelength</Option>
+        <Option optId="2">Amplitude</Option>
+        <Option optId="3">Frequency</Option>
+        <Option optId="4">Volume</Option>
         <Answer>B</Answer>
     </Question>
     <Question id="3">
@@ -41,12 +42,12 @@
     </Question>
     <Question id="5">
         <Type>Video</Type>
-        <File>vid1.avi</File>
-        <Text>What inserted ?</Text>
-        <Option optId="1">Circle</Option>
-        <Option optId="2">Square</Option>
-        <Option optId="3">Triangle</Option>
-        <Option optId="4">Heptagon</Option>
+        <File>assignment_x264.mp4</File>
+        <Text>What effects have been added ?</Text>
+        <Option optId="1">A sound and pixalation</Option>
+        <Option optId="2">A sound and blurring</Option>
+        <Option optId="3">Pixalation and blurring</Option>
+        <Option optId="4">Titles and fade</Option>
         <Answer>A</Answer>
     </Question>
     <Question id="6">
@@ -71,6 +72,7 @@
     </Question>
     <Question id="8">
         <Type>Question</Type>
+        <QFunc>q2</QFunc>
         <Text>What type of graphic</Text>
         <Option optId="1">Mine</Option>
         <Option optId="2">Yours</Option>
@@ -117,5 +119,15 @@
         <Option optId="3">Lo Pass Filter</Option>
         <Option optId="4">Fade Filter</Option>
         <Answer>B</Answer>
+    </Question>
+    <Question id="13">
+        <Type>Video</Type>
+        <File>assignment2_x264.mp4</File>
+        <Text>The video has had frames moved.  What effects have joined the clips</Text>
+        <Option optId="1">Frame blurring</Option>
+        <Option optId="2">Volume adjustment</Option>
+        <Option optId="3">Fading of visuals and sound</Option>
+        <Option optId="4">No alterations</Option>
+        <Answer>C</Answer>
     </Question>
 </Quiz>

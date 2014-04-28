@@ -1,10 +1,11 @@
 /* 
+ * 280414   MtpA    Amended to accept class instead of id for displayWindow
  * 250414   MtpA    Create script
  */
 
 
 function setDisplayWindow(width, height) {
-    return Raphael(document.getElementById("displayWindow"), width, height);
+    return Raphael(document.getElementsByClassName("displayWindow")[0], width, height);
 }
 
 function windowAnimate(displayBox) {

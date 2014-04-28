@@ -13,10 +13,6 @@ function displayAnswers(answerA, answerB, answerC, answerD) {
     document.getElementById("answerD").innerHTML = answerD;
 }
 
-function questionAnimate(displayBoxPaper) {
-    displayBoxPaper.clear();
-}
-
 function startSound(displayBoxPaper, soundID, song) {
     var soundContainer = document.getElementById(soundID);
     var containerSound = document.getElementById("soundSource");
@@ -26,17 +22,38 @@ function startSound(displayBoxPaper, soundID, song) {
     soundContainer.play();    
 }
 
-function processAnimation(displayBoxPaper, curQuestion) {
+function processQuestion(displayBoxPaper, curQuestion) {
+    displayBoxPaper.clear();
+    questionDebugMsg(curQuestion.qFunc,curQuestion.text);
+    switch (curQuestion.qFunc) {
+        case "q1":
+            question1(displayBoxPaper, curQuestion);
+            break;
+        case "q2":
+            setDisplayWindowText(displayBoxPaper,"Question 2 !",20, 20);
+            break;
+        default:
+            setDisplayWindowText(displayBoxPaper,"Something wrong with questions !",20, 20);
+    }
+}
+
+function processAnimation(displayBoxPaper, curAnimation) {
     setDisplayWindowText(displayBoxPaper,"animation",20, 20);
 }
 
-function processPicture(displayBoxPaper, curQuestion) {
-    var imagePath = "../images/" + curQuestion.file;
+function processPicture(displayBoxPaper, curPicture) {
+    var imagePath = "../images/" + curPicture.file;
     setDisplayWindowImage(displayBoxPaper,imagePath,20, 20, 400, 300);
 }
 
-function processVideo(displayBoxPaper, curQuestion) {
-    setDisplayWindowText(displayBoxPaper,"video",20, 20);
+function processVideo(curVideo) {
+    var videoPlayer = document.getElementsByClassName("pageVideo")[0];
+    var videoSource = document.getElementsByClassName("videoSource")[0];
+    var sourceFile = "../video/" + curVideo.file + "#t=0";
+    
+    videoSource.src = sourceFile;
+    videoPlayer.load();
+    videoPlayer.play();
 }
 
 function questionDebugMsg(a, b) {

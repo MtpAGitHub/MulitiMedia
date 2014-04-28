@@ -44,17 +44,22 @@ and open the template in the editor.
     background: linear-gradient(#0052CC, #66A3FF); /* Standard syntax */
 }
 
+.questionGrid {
+    width: 500px;
+    height: 300px;
+}
+
 .centreGrid {
     width: 300px;
 }
 
 .answerGrid {
-    width: 700px;
-    height: 350px;
+    width: 600px;
+    height: 400px;
 }
 
 .answerButtons {
-    border-spacing: 10px;    
+    border-spacing: 5px;    
 }
 
 .answerButtons tr td {
@@ -64,6 +69,14 @@ and open the template in the editor.
     border: 2px solid white;
     border-radius: 5px;
     text-align: center;
+}
+
+.raphaelCanvas {
+    display: block;
+}
+
+.movie {
+    display: none;
 }
 
 #questionBox {

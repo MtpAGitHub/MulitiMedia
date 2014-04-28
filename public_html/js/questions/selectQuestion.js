@@ -10,24 +10,56 @@ function questionEvent(pressedButton, questionList, questionBoxes) {
     displayAnswers(curQuestion.oneopt, curQuestion.twoopt, curQuestion.threeopt, curQuestion.fouropt);
     switch (curQuestion.type) {
         case "Sound":
+            toggleDisplayWindow(questionBoxes.displayBoxPaper,"raphael");
             startSound(questionBoxes.displayBoxPaper, "sound", curQuestion.file);
             countdownTime = 2000;
             break;
         case "Question":
-            questionAnimate(questionBoxes.displayBoxPaper);
+            toggleDisplayWindow(questionBoxes.displayBoxPaper,"raphael");
+            processQuestion(questionBoxes.displayBoxPaper, curQuestion);
             break;
         case "Animation":
+            toggleDisplayWindow(questionBoxes.displayBoxPaper,"raphael");
             processAnimation(questionBoxes.displayBoxPaper, curQuestion);
             break;
         case "Picture":
+            toggleDisplayWindow(questionBoxes.displayBoxPaper,"raphael");
             processPicture(questionBoxes.displayBoxPaper, curQuestion);
             break;
         case "Video":
-            processVideo(questionBoxes.displayBoxPaper, curQuestion);
+            toggleDisplayWindow(questionBoxes.displayBoxPaper,"movie");
+            processVideo(curQuestion);
             break;
         default:
             break;
     }
     questionTimer = startTimer(questionBoxes.timerBoxPaper ,curTime, countdownTime);
     return false;
+}
+
+function toggleDisplayWindow(displayPaper, displayType) {
+    var raphaelCanvas = document.getElementsByClassName("raphaelCanvas")[0];
+    var movieDiv = document.getElementsByClassName("movie")[0];
+    var videoPlayer = document.getElementsByClassName("pageVideo")[0];
+    var videoSource = document.getElementsByClassName("videoSource")[0];
+    
+    switch (displayType) {
+        case "raphael":
+            raphaelCanvas.style.display = "block";
+            movieDiv.style.display = "none";
+            videoPlayer.pause();
+            videoSource.src = "";
+            break;
+        case "movie":
+            movieDiv.style.display = "block";
+            raphaelCanvas.style.display = "none";
+            break;
+        default:
+            raphaelCanvas.style.display = "block";
+            movieDiv.style.display = "none";
+            videoPlayer.pause();
+            videoSource.src = "";
+            setDisplayWindowText(displayPaper,"Something wrong with canvas/video !",20, 20);
+            break;
+    }
 }
