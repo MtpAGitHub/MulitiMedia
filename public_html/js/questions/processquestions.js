@@ -3,7 +3,7 @@
  */
 
 function displayQuestion(questionPaper, questionText) {
-    setQuestionText(questionPaper, questionText, 20, 20);
+    setQuestionText(questionPaper, questionText, 20, 20, 14);
 }
 
 function displayAnswers(answerA, answerB, answerC, answerD) {

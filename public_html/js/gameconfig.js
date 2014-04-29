@@ -9,7 +9,7 @@ function configGame(configBoxes) {
     var startTime = 9;
 
     windowAnimate(configBoxes.displayBoxPaper);
-    setQuestionText(configBoxes.questionBoxPaper, "Pick a square !", 20, 20);
+    setQuestionText(configBoxes.questionBoxPaper, "Pick a square ! Pick a square ! Pick a square ! Pick a square ! Pick a square !", 20, 20, 14);
     displayAnswers("Answer A", "Answer B", "Answer C", "Answer D");
     timerDisp(configBoxes.timerBoxPaper, startTime);
     setScoreText(configBoxes.scoresBoxPaper, "Score: 0");
