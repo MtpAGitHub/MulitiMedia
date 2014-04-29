@@ -2,92 +2,92 @@
 <Quiz>
     <Question id="1">
         <Type>Question</Type>
-        <QFunc>q1</QFunc>
-        <Text>What does the line L represent ?</Text>
-        <Option optId="1">Wavelength</Option>
-        <Option optId="2">Amplitude</Option>
-        <Option optId="3">Frequency</Option>
-        <Option optId="4">Volume</Option>
+        <QFunc>q2</QFunc>
+        <Text>What is the sampling rate of the wave shown here ?</Text>
+        <Option optId="1">10Hz</Option>
+        <Option optId="2">20Hz</Option>
+        <Option optId="3">30Hz</Option>
+        <Option optId="4">40Hz</Option>
         <Answer>B</Answer>
     </Question>
     <Question id="2">
         <Type>Question</Type>
-        <QFunc>q1</QFunc>
-        <Text>What does the line L represent ?</Text>
-        <Option optId="1">Wavelength</Option>
-        <Option optId="2">Amplitude</Option>
-        <Option optId="3">Frequency</Option>
-        <Option optId="4">Volume</Option>
+        <QFunc>q2</QFunc>
+        <Text>What is the sampling rate of the wave shown here ?</Text>
+        <Option optId="1">10Hz</Option>
+        <Option optId="2">20Hz</Option>
+        <Option optId="3">30Hz</Option>
+        <Option optId="4">40Hz</Option>
         <Answer>B</Answer>
     </Question>
     <Question id="3">
         <Type>Question</Type>
-        <QFunc>q1</QFunc>
-        <Text>What does the line L represent ?</Text>
-        <Option optId="1">Wavelength</Option>
-        <Option optId="2">Amplitude</Option>
-        <Option optId="3">Frequency</Option>
-        <Option optId="4">Volume</Option>
+        <QFunc>q2</QFunc>
+        <Text>What is the sampling rate of the wave shown here ?</Text>
+        <Option optId="1">10Hz</Option>
+        <Option optId="2">20Hz</Option>
+        <Option optId="3">30Hz</Option>
+        <Option optId="4">40Hz</Option>
         <Answer>B</Answer>
     </Question>
     <Question id="4">
         <Type>Question</Type>
-        <QFunc>q1</QFunc>
-        <Text>What does the line L represent ?</Text>
-        <Option optId="1">Wavelength</Option>
-        <Option optId="2">Amplitude</Option>
-        <Option optId="3">Frequency</Option>
-        <Option optId="4">Volume</Option>
+        <QFunc>q2</QFunc>
+        <Text>What is the sampling rate of the wave shown here ?</Text>
+        <Option optId="1">10Hz</Option>
+        <Option optId="2">20Hz</Option>
+        <Option optId="3">30Hz</Option>
+        <Option optId="4">40Hz</Option>
         <Answer>B</Answer>
     </Question>
     <Question id="5">
         <Type>Question</Type>
-        <QFunc>q1</QFunc>
-        <Text>What does the line L represent ?</Text>
-        <Option optId="1">Wavelength</Option>
-        <Option optId="2">Amplitude</Option>
-        <Option optId="3">Frequency</Option>
-        <Option optId="4">Volume</Option>
+        <QFunc>q2</QFunc>
+        <Text>What is the sampling rate of the wave shown here ?</Text>
+        <Option optId="1">10Hz</Option>
+        <Option optId="2">20Hz</Option>
+        <Option optId="3">30Hz</Option>
+        <Option optId="4">40Hz</Option>
         <Answer>B</Answer>
     </Question>
     <Question id="6">
         <Type>Question</Type>
-        <QFunc>q1</QFunc>
-        <Text>What does the line L represent ?</Text>
-        <Option optId="1">Wavelength</Option>
-        <Option optId="2">Amplitude</Option>
-        <Option optId="3">Frequency</Option>
-        <Option optId="4">Volume</Option>
+        <QFunc>q2</QFunc>
+        <Text>What is the sampling rate of the wave shown here ?</Text>
+        <Option optId="1">10Hz</Option>
+        <Option optId="2">20Hz</Option>
+        <Option optId="3">30Hz</Option>
+        <Option optId="4">40Hz</Option>
         <Answer>B</Answer>
     </Question>
     <Question id="7">
         <Type>Question</Type>
-        <QFunc>q1</QFunc>
-        <Text>What does the line L represent ?</Text>
-        <Option optId="1">Wavelength</Option>
-        <Option optId="2">Amplitude</Option>
-        <Option optId="3">Frequency</Option>
-        <Option optId="4">Volume</Option>
+        <QFunc>q2</QFunc>
+        <Text>What is the sampling rate of the wave shown here ?</Text>
+        <Option optId="1">10Hz</Option>
+        <Option optId="2">20Hz</Option>
+        <Option optId="3">30Hz</Option>
+        <Option optId="4">40Hz</Option>
         <Answer>B</Answer>
     </Question>
     <Question id="8">
         <Type>Question</Type>
-        <QFunc>q1</QFunc>
-        <Text>What does the line L represent ?</Text>
-        <Option optId="1">Wavelength</Option>
-        <Option optId="2">Amplitude</Option>
-        <Option optId="3">Frequency</Option>
-        <Option optId="4">Volume</Option>
+        <QFunc>q2</QFunc>
+        <Text>What is the sampling rate of the wave shown here ?</Text>
+        <Option optId="1">10Hz</Option>
+        <Option optId="2">20Hz</Option>
+        <Option optId="3">30Hz</Option>
+        <Option optId="4">40Hz</Option>
         <Answer>B</Answer>
     </Question>
     <Question id="9">
         <Type>Question</Type>
-        <QFunc>q1</QFunc>
-        <Text>What does the line L represent ?</Text>
-        <Option optId="1">Wavelength</Option>
-        <Option optId="2">Amplitude</Option>
-        <Option optId="3">Frequency</Option>
-        <Option optId="4">Volume</Option>
+        <QFunc>q2</QFunc>
+        <Text>What is the sampling rate of the wave shown here ?</Text>
+        <Option optId="1">10Hz</Option>
+        <Option optId="2">20Hz</Option>
+        <Option optId="3">30Hz</Option>
+        <Option optId="4">40Hz</Option>
         <Answer>B</Answer>
     </Question>
 </Quiz>

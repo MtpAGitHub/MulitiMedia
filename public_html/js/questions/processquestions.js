@@ -27,10 +27,10 @@ function processQuestion(displayBoxPaper, curQuestion) {
     questionDebugMsg(curQuestion.qFunc,curQuestion.text);
     switch (curQuestion.qFunc) {
         case "q1":
-            question1(displayBoxPaper, curQuestion);
+            question1(displayBoxPaper);
             break;
         case "q2":
-            setDisplayWindowText(displayBoxPaper,"Question 2 !",20, 20, 24);
+            question2(displayBoxPaper);
             break;
         default:
             setDisplayWindowText(displayBoxPaper,"Something wrong with questions !",20, 20, 24);

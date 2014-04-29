@@ -1,8 +1,9 @@
 /* 
+ * 290414   MtpA    Added question 2
  * 280414   MtpA    Created script
  */
 
-function question1(displayBoxPaper, questionOne) {
+function question1(displayBoxPaper) {
     var curve = displayBoxPaper.path([
         'M', 60, 150,
         'Q', 180, -25, 285, 150,
@@ -63,9 +64,68 @@ function question1(displayBoxPaper, questionOne) {
                 'font-family': "arial",
                 'font-size': 24,
                 'font-style': "italic",
-                'fill': "white",
+                'fill': "red",
                 'text-anchor': 'start',
                 'opacity': 0
             }
     );
+    increaseOpacity(lineText, 0.1);
+}
+
+function increaseOpacity(lineText, opacityVal) {
+    if (opacityVal > 1) {
+        lineText.stop();
+        return;
+    } else {
+        lineText.animate(
+                {
+                    opacity: opacityVal
+                },
+                200,
+                'linear',
+                setTimeout(function () {increaseOpacity(lineText, opacityVal + 0.1)},200)
+        );
+    }
+}
+
+function question2(displayBoxPaper) {
+    var sampleLineArray = [-33, -62, -84, -89, -81, -55, -18, 18, 59, 81, 86, 83, 67, 34];
+    var curve = displayBoxPaper.path([
+        'M', 60, 150,
+        'Q', 180, -25, 285, 150,
+        'T', 510, 150 
+    ]);
+    curve.attr(
+            {
+                stroke:'white',
+                'stroke-width': 2
+            }
+    );
+    var xline = displayBoxPaper.path("M60 150L510 150");
+    xline.attr(
+            {
+                stroke:'#D1D1E0',
+                'stroke-width': 4
+            }
+    );
+    var arrayPos = 0;
+    for (i=30; i <=420; i=i + 30) {
+        var sampleLinePos = 560 + i;
+        var sampleLineLength = sampleLineArray[arrayPos++];
+        var sampleLinePath = "M" + sampleLinePos + " 150l0 " + sampleLineLength;
+        var sampleLine = displayBoxPaper.path(sampleLinePath);
+        sampleLine.attr(
+                {
+                    stroke: 'red',
+                    'stroke-width': 4
+                }
+        );
+        sampleLine.animate(
+                {
+                    transform: "t-500 0"
+                },
+                1000,
+                'ease-out'
+        );
+    }
 }
