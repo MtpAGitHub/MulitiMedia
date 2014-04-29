@@ -35,13 +35,13 @@ function windowAnimate(displayBox) {
     );
 }
 
-function setDisplayWindowText(displayPaper, questionText, xpos, ypos) {
+function setDisplayWindowText(displayPaper, questionText, xpos, ypos, textSize) {
     displayPaper.clear();
     var questionText = displayPaper.text(xpos, ypos, questionText);
     questionText.attr(
             {
                 'font-family': "arial",
-                'font-size': 24,
+                'font-size': textSize,
                 'fill': "white",
                 'text-anchor': 'start'
             }

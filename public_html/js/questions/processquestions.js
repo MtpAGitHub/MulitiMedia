@@ -30,15 +30,15 @@ function processQuestion(displayBoxPaper, curQuestion) {
             question1(displayBoxPaper, curQuestion);
             break;
         case "q2":
-            setDisplayWindowText(displayBoxPaper,"Question 2 !",20, 20);
+            setDisplayWindowText(displayBoxPaper,"Question 2 !",20, 20, 24);
             break;
         default:
-            setDisplayWindowText(displayBoxPaper,"Something wrong with questions !",20, 20);
+            setDisplayWindowText(displayBoxPaper,"Something wrong with questions !",20, 20, 24);
     }
 }
 
 function processAnimation(displayBoxPaper, curAnimation) {
-    setDisplayWindowText(displayBoxPaper,"animation",20, 20);
+    setDisplayWindowText(displayBoxPaper,"animation",20, 20, 24);
 }
 
 function processPicture(displayBoxPaper, curPicture) {

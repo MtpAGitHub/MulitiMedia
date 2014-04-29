@@ -59,7 +59,7 @@ function toggleDisplayWindow(displayPaper, displayType) {
             movieDiv.style.display = "none";
             videoPlayer.pause();
             videoSource.src = "";
-            setDisplayWindowText(displayPaper,"Something wrong with canvas/video !",20, 20);
+            setDisplayWindowText(displayPaper,"Something wrong with canvas/video !",20, 20,24);
             break;
     }
 }
