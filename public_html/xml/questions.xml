@@ -23,12 +23,12 @@
     <Question id="3">
         <Type>Animation</Type>
         <AniFunc>a1</AniFunc>
-        <Text>What shape ?</Text>
+        <Text>What shape is represented by this 3D model?</Text>
         <Option optId="1">Circle</Option>
         <Option optId="2">Square</Option>
         <Option optId="3">Triangle</Option>
         <Option optId="4">Heptagon</Option>
-        <Answer>C</Answer>
+        <Answer>B</Answer>
     </Question>
     <Question id="4">
         <Type>Picture</Type>
@@ -73,32 +73,32 @@
     <Question id="8">
         <Type>Question</Type>
         <QFunc>q2</QFunc>
-        <Text>What type of graphic</Text>
-        <Option optId="1">Mine</Option>
-        <Option optId="2">Yours</Option>
-        <Option optId="3">Hers</Option>
-        <Option optId="4">Theirs</Option>
-        <Answer>A</Answer>
+        <Text>What is the sampling rate of the waveform shown here ?</Text>
+        <Option optId="1">2Hz</Option>
+        <Option optId="2">7Hz</Option>
+        <Option optId="3">14Hz</Option>
+        <Option optId="4">100Hz</Option>
+        <Answer>C</Answer>
     </Question>
     <Question id="9">
         <Type>Animation</Type>
         <AniFunc>a2</AniFunc>
-        <Text>What movement ?</Text>
+        <Text>What is the THIRD shape to be displayed ?</Text>
         <Option optId="1">Circle</Option>
         <Option optId="2">Square</Option>
         <Option optId="3">Triangle</Option>
         <Option optId="4">Heptagon</Option>
-        <Answer>B</Answer>
+        <Answer>D</Answer>
     </Question>
     <Question id="10">
         <Type>Animation</Type>
         <AniFunc>a3</AniFunc>
-        <Text>Where to ?</Text>
-        <Option optId="1">Top</Option>
-        <Option optId="2">Middle</Option>
-        <Option optId="3">Bottom</Option>
-        <Option optId="4">Nowhere</Option>
-        <Answer>C</Answer>
+        <Text>Which item drags into the box !</Text>
+        <Option optId="1">Circle</Option>
+        <Option optId="2">Square</Option>
+        <Option optId="3">Triangle</Option>
+        <Option optId="4">Heptagon</Option>
+        <Answer>A</Answer>
     </Question>
     <Question id="11">
         <Type>Picture</Type>
@@ -128,6 +128,48 @@
         <Option optId="2">Volume adjustment</Option>
         <Option optId="3">Fading of visuals and sound</Option>
         <Option optId="4">No alterations</Option>
+        <Answer>C</Answer>
+    </Question>
+    <Question id="14">
+        <Type>Picture</Type>
+        <File>layer.jpg</File>
+        <Text>How has this effect been achieved ?</Text>
+        <Option optId="1">Great camera work</Option>
+        <Option optId="2">Copy and Paste</Option>
+        <Option optId="3">Free hand drawing</Option>
+        <Option optId="4">Combining different picture layers</Option>
+        <Answer>D</Answer>
+    </Question>
+    <Question id="15">
+        <Type>Sound</Type>
+        <File>combine.mp3</File>
+        <Text>The low and high notes were brought together how ?</Text>
+        <Option optId="1">Two seperate tracks merged into one</Option>
+        <Option optId="2">Altering the pitch of some low notes</Option>
+        <Option optId="3">Altering the pitch of some high notes</Option>
+        <Option optId="4">Using a grand piano</Option>
+        <Answer>A</Answer>
+    </Question>
+    <Question id="16">
+        <Type>Question</Type>
+        <File>kangaroo.jpg</File>
+        <QFunc>q3</QFunc>
+        <Text>What is being increased to reveal this picture ?</Text>
+        <Option optId="1">Brightness</Option>
+        <Option optId="2">Opacity</Option>
+        <Option optId="3">Contrast</Option>
+        <Option optId="4">Colour</Option>
+        <Answer>B</Answer>
+    </Question>
+    <Question id="17">
+        <Type>Animation</Type>
+        <File>squirel.jpg</File>
+        <AniFunc>a4</AniFunc>
+        <Text>What animal is hidden here ?</Text>
+        <Option optId="1">Rabbit</Option>
+        <Option optId="2">Horse</Option>
+        <Option optId="3">Squirel</Option>
+        <Option optId="4">Bird</Option>
         <Answer>C</Answer>
     </Question>
 </Quiz>

@@ -4,7 +4,7 @@
  */
 
 function configGame(configBoxes) {
-    var questions = getQuestions("test_questions.xml");
+    var questions = getQuestions("questions.xml");
     var randomisedQuestions = randomizeQuestions(questions);
     var startTime = 9;
 

@@ -1,4 +1,6 @@
 /* 
+ * 
+ * 260414   MtpA    Added video functionality
  * 250414   MtpA    Create script
  */
 
@@ -32,18 +34,21 @@ function processQuestion(displayBoxPaper, curQuestion) {
         case "q2":
             question2(displayBoxPaper);
             break;
+        case "q3":
+            question3(displayBoxPaper, curQuestion);
+            break;
         default:
-            setDisplayWindowText(displayBoxPaper,"Something wrong with questions !",20, 20, 24);
+            setDisplayWindowText(displayBoxPaper,"Something wrong with questions !",20, 20, 24, "white", true);
     }
 }
 
 function processAnimation(displayBoxPaper, curAnimation) {
-    setDisplayWindowText(displayBoxPaper,"animation",20, 20, 24);
+    setDisplayWindowText(displayBoxPaper,"animation",20, 20, 24, "white", true);
 }
 
 function processPicture(displayBoxPaper, curPicture) {
     var imagePath = "../images/" + curPicture.file;
-    setDisplayWindowImage(displayBoxPaper,imagePath,20, 20, 400, 300);
+    setDisplayWindowImage(displayBoxPaper,imagePath,20, 20, 400, 300, 1);
 }
 
 function processVideo(curVideo) {

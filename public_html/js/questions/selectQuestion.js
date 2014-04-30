@@ -1,3 +1,10 @@
+/* 
+ * 250414   MtpA    Added video functionality
+ * 240314   MtpA    Completed proper processing of sound and pictures
+ * 200314   MtpA    Added full case statement for all of the question types and dummy displays
+ * 140314   MtpA    Created script
+ */
+
 function questionEvent(pressedButton, questionList, questionBoxes) {    
     var questionArrayPos = pressedButton -1;
     var curQuestion = questionList[questionArrayPos];
@@ -59,7 +66,7 @@ function toggleDisplayWindow(displayPaper, displayType) {
             movieDiv.style.display = "none";
             videoPlayer.pause();
             videoSource.src = "";
-            setDisplayWindowText(displayPaper,"Something wrong with canvas/video !",20, 20,24);
+            setDisplayWindowText(displayPaper,"Something wrong with canvas/video !",20, 20, 24, "white", true);
             break;
     }
 }

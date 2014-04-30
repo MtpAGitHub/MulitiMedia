@@ -1,4 +1,5 @@
 /* 
+ * 300414   MtpA    Added question 3
  * 290414   MtpA    Added question 2
  * 280414   MtpA    Created script
  */
@@ -69,23 +70,7 @@ function question1(displayBoxPaper) {
                 'opacity': 0
             }
     );
-    increaseOpacity(lineText, 0.1);
-}
-
-function increaseOpacity(lineText, opacityVal) {
-    if (opacityVal > 1) {
-        lineText.stop();
-        return;
-    } else {
-        lineText.animate(
-                {
-                    opacity: opacityVal
-                },
-                200,
-                'linear',
-                setTimeout(function () {increaseOpacity(lineText, opacityVal + 0.1)},200)
-        );
-    }
+    increaseOpacity(lineText, 0.1, 200);
 }
 
 function question2(displayBoxPaper) {
@@ -128,4 +113,26 @@ function question2(displayBoxPaper) {
                 'ease-out'
         );
     }
+    var waveLengthLine = displayBoxPaper.path("M60 270L510 270");
+    var verticalL = displayBoxPaper.path("M60 260L60 280");
+    var verticalR = displayBoxPaper.path("M510 260L510 280");
+    var wavelengthItems = displayBoxPaper.set();
+    wavelengthItems.push(
+            waveLengthLine,
+            verticalL,
+            verticalR
+    );
+    wavelengthItems.attr(
+            {
+                stroke:'white',
+                'stroke-width': 4
+            }
+    );
+    var waveLengthText = setDisplayWindowText(displayBoxPaper, "1 Second", 250, 290, 24, "white", false);
+}
+
+function question3(displayBoxPaper, questionThree) {
+    var imagePath = "../images/" + questionThree.file;
+    opacityImage = setDisplayWindowImage(displayBoxPaper,imagePath,20, 20, 400, 300, 0);
+    increaseOpacity(opacityImage, 0.1, 400);    
 }

@@ -1,4 +1,5 @@
 /* 
+ * 300414   MtpA    Added return parameter to setDisplayWindowImage so it can be used for further manipulation
  * 280414   MtpA    Forgot to change canvas name for raphaelCanvas so was not 'swapping' windows properly
  * 280414   MtpA    Amended to accept class instead of id for displayWindow
  * 250414   MtpA    Create script
@@ -35,20 +36,13 @@ function windowAnimate(displayBox) {
     );
 }
 
-function setDisplayWindowText(displayPaper, questionText, xpos, ypos, textSize) {
+function setDisplayWindowImage(displayPaper, displayImage, xpos, ypos, width, height, startOpacity) {
     displayPaper.clear();
-    var questionText = displayPaper.text(xpos, ypos, questionText);
-    questionText.attr(
+    var dispImage = displayPaper.image(displayImage, xpos, ypos, width, height);
+    dispImage.attr(
             {
-                'font-family': "arial",
-                'font-size': textSize,
-                'fill': "white",
-                'text-anchor': 'start'
+                opacity: startOpacity
             }
     );
-}
-
-function setDisplayWindowImage(displayPaper, displayImage, xpos, ypos, width, height) {
-    displayPaper.clear();
-    var btonImage = displayPaper.image(displayImage, xpos, ypos, width, height);    
+    return dispImage;
 }
