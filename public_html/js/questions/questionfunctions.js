@@ -134,5 +134,5 @@ function question2(displayBoxPaper) {
 function question3(displayBoxPaper, questionThree) {
     var imagePath = "../images/" + questionThree.file;
     opacityImage = setDisplayWindowImage(displayBoxPaper,imagePath,20, 20, 400, 300, 0);
-    increaseOpacity(opacityImage, 0.1, 400);    
+    increaseOpacity(opacityImage, 0.1, 500);    
 }

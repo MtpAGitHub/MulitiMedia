@@ -16,6 +16,7 @@ function displayAnswers(answerA, answerB, answerC, answerD) {
 }
 
 function startSound(displayBoxPaper, soundID, song) {
+    setDisplayWindowText(displayBoxPaper,"Just listen to the music !",20, 20, 24, "white", true);
     var soundContainer = document.getElementById(soundID);
     var containerSound = document.getElementById("soundSource");
     containerSound.src = "../sound/" + song;
@@ -26,7 +27,6 @@ function startSound(displayBoxPaper, soundID, song) {
 
 function processQuestion(displayBoxPaper, curQuestion) {
     displayBoxPaper.clear();
-    questionDebugMsg(curQuestion.qFunc,curQuestion.text);
     switch (curQuestion.qFunc) {
         case "q1":
             question1(displayBoxPaper);
@@ -43,7 +43,20 @@ function processQuestion(displayBoxPaper, curQuestion) {
 }
 
 function processAnimation(displayBoxPaper, curAnimation) {
-    setDisplayWindowText(displayBoxPaper,"animation",20, 20, 24, "white", true);
+    displayBoxPaper.clear();
+    switch (curAnimation.aniFunc) {
+        case "a1":
+            animate1(displayBoxPaper);
+            break;
+        case "a2":
+            animate2(displayBoxPaper);
+            break;
+        case "a3":
+            animate3(displayBoxPaper);
+            break;
+        default:
+            setDisplayWindowText(displayBoxPaper,"Something wrong with animations !",20, 20, 24, "white", true);
+    }
 }
 
 function processPicture(displayBoxPaper, curPicture) {

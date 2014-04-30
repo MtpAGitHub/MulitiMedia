@@ -1,93 +1,93 @@
 <?xml version="1.0"?>
 <Quiz>
     <Question id="1">
-        <Type>Question</Type>
-        <QFunc>q2</QFunc>
-        <Text>What is the sampling rate of the wave shown here ?</Text>
-        <Option optId="1">10Hz</Option>
-        <Option optId="2">20Hz</Option>
-        <Option optId="3">30Hz</Option>
-        <Option optId="4">40Hz</Option>
-        <Answer>B</Answer>
+        <Type>Animation</Type>
+        <AniFunc>a2</AniFunc>
+        <Text>What is the THIRD shape to be displayed ?</Text>
+        <Option optId="1">Circle</Option>
+        <Option optId="2">Square</Option>
+        <Option optId="3">Triangle</Option>
+        <Option optId="4">Heptagon</Option>
+        <Answer>D</Answer>
     </Question>
     <Question id="2">
-        <Type>Question</Type>
-        <QFunc>q2</QFunc>
-        <Text>What is the sampling rate of the wave shown here ?</Text>
-        <Option optId="1">10Hz</Option>
-        <Option optId="2">20Hz</Option>
-        <Option optId="3">30Hz</Option>
-        <Option optId="4">40Hz</Option>
-        <Answer>B</Answer>
+        <Type>Animation</Type>
+        <AniFunc>a2</AniFunc>
+        <Text>What is the THIRD shape to be displayed ?</Text>
+        <Option optId="1">Circle</Option>
+        <Option optId="2">Square</Option>
+        <Option optId="3">Triangle</Option>
+        <Option optId="4">Heptagon</Option>
+        <Answer>D</Answer>
     </Question>
     <Question id="3">
-        <Type>Question</Type>
-        <QFunc>q2</QFunc>
-        <Text>What is the sampling rate of the wave shown here ?</Text>
-        <Option optId="1">10Hz</Option>
-        <Option optId="2">20Hz</Option>
-        <Option optId="3">30Hz</Option>
-        <Option optId="4">40Hz</Option>
-        <Answer>B</Answer>
+        <Type>Animation</Type>
+        <AniFunc>a2</AniFunc>
+        <Text>What is the THIRD shape to be displayed ?</Text>
+        <Option optId="1">Circle</Option>
+        <Option optId="2">Square</Option>
+        <Option optId="3">Triangle</Option>
+        <Option optId="4">Heptagon</Option>
+        <Answer>D</Answer>
     </Question>
     <Question id="4">
-        <Type>Question</Type>
-        <QFunc>q2</QFunc>
-        <Text>What is the sampling rate of the wave shown here ?</Text>
-        <Option optId="1">10Hz</Option>
-        <Option optId="2">20Hz</Option>
-        <Option optId="3">30Hz</Option>
-        <Option optId="4">40Hz</Option>
-        <Answer>B</Answer>
+        <Type>Animation</Type>
+        <AniFunc>a2</AniFunc>
+        <Text>What is the THIRD shape to be displayed ?</Text>
+        <Option optId="1">Circle</Option>
+        <Option optId="2">Square</Option>
+        <Option optId="3">Triangle</Option>
+        <Option optId="4">Heptagon</Option>
+        <Answer>D</Answer>
     </Question>
     <Question id="5">
-        <Type>Question</Type>
-        <QFunc>q2</QFunc>
-        <Text>What is the sampling rate of the wave shown here ?</Text>
-        <Option optId="1">10Hz</Option>
-        <Option optId="2">20Hz</Option>
-        <Option optId="3">30Hz</Option>
-        <Option optId="4">40Hz</Option>
-        <Answer>B</Answer>
+        <Type>Animation</Type>
+        <AniFunc>a2</AniFunc>
+        <Text>What is the THIRD shape to be displayed ?</Text>
+        <Option optId="1">Circle</Option>
+        <Option optId="2">Square</Option>
+        <Option optId="3">Triangle</Option>
+        <Option optId="4">Heptagon</Option>
+        <Answer>D</Answer>
     </Question>
     <Question id="6">
-        <Type>Question</Type>
-        <QFunc>q2</QFunc>
-        <Text>What is the sampling rate of the wave shown here ?</Text>
-        <Option optId="1">10Hz</Option>
-        <Option optId="2">20Hz</Option>
-        <Option optId="3">30Hz</Option>
-        <Option optId="4">40Hz</Option>
-        <Answer>B</Answer>
+        <Type>Animation</Type>
+        <AniFunc>a2</AniFunc>
+        <Text>What is the THIRD shape to be displayed ?</Text>
+        <Option optId="1">Circle</Option>
+        <Option optId="2">Square</Option>
+        <Option optId="3">Triangle</Option>
+        <Option optId="4">Heptagon</Option>
+        <Answer>D</Answer>
     </Question>
     <Question id="7">
-        <Type>Question</Type>
-        <QFunc>q2</QFunc>
-        <Text>What is the sampling rate of the wave shown here ?</Text>
-        <Option optId="1">10Hz</Option>
-        <Option optId="2">20Hz</Option>
-        <Option optId="3">30Hz</Option>
-        <Option optId="4">40Hz</Option>
-        <Answer>B</Answer>
+        <Type>Animation</Type>
+        <AniFunc>a2</AniFunc>
+        <Text>What is the THIRD shape to be displayed ?</Text>
+        <Option optId="1">Circle</Option>
+        <Option optId="2">Square</Option>
+        <Option optId="3">Triangle</Option>
+        <Option optId="4">Heptagon</Option>
+        <Answer>D</Answer>
     </Question>
     <Question id="8">
-        <Type>Question</Type>
-        <QFunc>q2</QFunc>
-        <Text>What is the sampling rate of the wave shown here ?</Text>
-        <Option optId="1">10Hz</Option>
-        <Option optId="2">20Hz</Option>
-        <Option optId="3">30Hz</Option>
-        <Option optId="4">40Hz</Option>
-        <Answer>B</Answer>
+        <Type>Animation</Type>
+        <AniFunc>a2</AniFunc>
+        <Text>What is the THIRD shape to be displayed ?</Text>
+        <Option optId="1">Circle</Option>
+        <Option optId="2">Square</Option>
+        <Option optId="3">Triangle</Option>
+        <Option optId="4">Heptagon</Option>
+        <Answer>D</Answer>
     </Question>
     <Question id="9">
-        <Type>Question</Type>
-        <QFunc>q2</QFunc>
-        <Text>What is the sampling rate of the wave shown here ?</Text>
-        <Option optId="1">10Hz</Option>
-        <Option optId="2">20Hz</Option>
-        <Option optId="3">30Hz</Option>
-        <Option optId="4">40Hz</Option>
-        <Answer>B</Answer>
+        <Type>Animation</Type>
+        <AniFunc>a2</AniFunc>
+        <Text>What is the THIRD shape to be displayed ?</Text>
+        <Option optId="1">Circle</Option>
+        <Option optId="2">Square</Option>
+        <Option optId="3">Triangle</Option>
+        <Option optId="4">Heptagon</Option>
+        <Answer>D</Answer>
     </Question>
 </Quiz>

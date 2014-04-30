@@ -123,7 +123,7 @@
     <Question id="13">
         <Type>Video</Type>
         <File>assignment2_x264.mp4</File>
-        <Text>The video has had frames moved.  What effects have joined the clips</Text>
+        <Text>The video has had frames moved.  What effects have been used to joined the clips together ?</Text>
         <Option optId="1">Frame blurring</Option>
         <Option optId="2">Volume adjustment</Option>
         <Option optId="3">Fading of visuals and sound</Option>

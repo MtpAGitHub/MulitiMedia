@@ -30,7 +30,7 @@ function increaseOpacity(opacityObj, opacityVal, delay) {
                 },
                 delay,
                 'linear',
-                setTimeout(function () {increaseOpacity(opacityObj, opacityVal + 0.1)},delay)
+                setTimeout(function () {increaseOpacity(opacityObj, opacityVal + 0.1, delay)},delay)
         );
     }
 }
