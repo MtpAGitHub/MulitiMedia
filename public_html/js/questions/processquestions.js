@@ -64,7 +64,7 @@ function processAnimation(displayBoxPaper, curAnimation) {
 
 function processPicture(displayBoxPaper, curPicture) {
     var imagePath = "../images/" + curPicture.file;
-    setDisplayWindowImage(displayBoxPaper,imagePath,20, 20, 400, 300, 1);
+    setDisplayWindowImage(displayBoxPaper,imagePath,85, 0, 400, 300, 1);
 }
 
 function processVideo(curVideo) {

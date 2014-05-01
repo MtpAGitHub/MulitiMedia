@@ -25,7 +25,7 @@ function animate2(animateDisplayWindow) {
                 shapeObject.colour = "0-#e97451-#f2aa95";
                 break;
             case 1: // triangle
-                shapeObject.path = "M400 50 l 75 75 l 0 -150 z";
+                shapeObject.path = "M400 100 l 75 75 l 0 -150 z";
                 shapeObject.colour = "0-#0007E5-#00A3BF";
                 break;
             case 2: // heptagon
@@ -128,11 +128,11 @@ function animate3(animateDisplayWindow) {
 
 function animate4(animateDisplayWindow) {
     var imagePath = "../images/squirel.jpg";
-    setDisplayWindowImage(displayBoxPaper,imagePath,15, 25, 400, 300, 1);    
-    for (verticalBox = 0; verticalBox < 4; verticalBox++) {
-        for (horizontalBox = 0; horizontalBox < 5; horizontalBox++) {
+    setDisplayWindowImage(animateDisplayWindow,imagePath,85, 0, 400, 300, 1);    
+    for (verticalBox = 0; verticalBox < 3; verticalBox++) {
+        for (horizontalBox = 0; horizontalBox < 4; horizontalBox++) {
             (function(verticalBox, horizontalBox) {
-                 var hideBoxes = displayBoxPaper.rect(10 + (horizontalBox * 82), 10 + (verticalBox * 82), 82, 82);
+                var hideBoxes = animateDisplayWindow.rect(85 + (horizontalBox * 100), 0 + (verticalBox * 100), 100, 100);
                 hideBoxes.attr(
                     {
                         fill: '#24577B',
