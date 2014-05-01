@@ -93,11 +93,11 @@
     <Question id="10">
         <Type>Animation</Type>
         <AniFunc>a3</AniFunc>
-        <Text>Which item drags into the box !</Text>
-        <Option optId="1">Circle</Option>
-        <Option optId="2">Square</Option>
-        <Option optId="3">Triangle</Option>
-        <Option optId="4">Heptagon</Option>
+        <Text>Which colour of circle gets trapped in the box !</Text>
+        <Option optId="1">Yellow</Option>
+        <Option optId="2">Pink</Option>
+        <Option optId="3">Red</Option>
+        <Option optId="4">Green</Option>
         <Answer>A</Answer>
     </Question>
     <Question id="11">

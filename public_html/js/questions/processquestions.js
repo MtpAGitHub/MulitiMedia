@@ -54,6 +54,9 @@ function processAnimation(displayBoxPaper, curAnimation) {
         case "a3":
             animate3(displayBoxPaper);
             break;
+        case "a4":
+            animate4(displayBoxPaper);
+            break;
         default:
             setDisplayWindowText(displayBoxPaper,"Something wrong with animations !",20, 20, 24, "white", true);
     }

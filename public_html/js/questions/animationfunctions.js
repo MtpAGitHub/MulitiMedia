@@ -1,4 +1,5 @@
 /* 
+ * 010514   MtpA    Added animation 2, 3 and 4
  * 300414   MtpA    Created script
  */
 
@@ -24,7 +25,7 @@ function animate2(animateDisplayWindow) {
                 shapeObject.colour = "0-#e97451-#f2aa95";
                 break;
             case 1: // triangle
-                shapeObject.path = "M400 50 l 75 150 l 0 -150 z";
+                shapeObject.path = "M400 50 l 75 75 l 0 -150 z";
                 shapeObject.colour = "0-#0007E5-#00A3BF";
                 break;
             case 2: // heptagon
@@ -80,5 +81,72 @@ function chgColour(chgShape, animateDisplayWindow, shapeArray, arrayPos) {
 }
 
 function animate3(animateDisplayWindow) {
-    setDisplayWindowText(displayBoxPaper,"Animation 3 !",20, 20, 24, "white", true);    
+    var greenCircle = animateDisplayWindow.circle(40, 40, 30).attr({fill: "green"});
+    var redCircle = animateDisplayWindow.circle(550, 40, 30).attr({fill: "red"});
+    var yellowCircle = animateDisplayWindow.circle(550, 260, 30).attr({fill: "yellow"});
+    var pinkCircle = animateDisplayWindow.circle(40, 260, 30).attr({fill: "pink"});
+    var dropBox = animateDisplayWindow.rect(260, 120, 80, 80);
+    var yellowId = yellowCircle.id;
+    var circleSet = animateDisplayWindow.set();
+
+    circleSet.push(
+        greenCircle,
+        redCircle,
+        yellowCircle,
+        pinkCircle
+    );
+    
+    var startDrag = function() {
+        this.originX = this.attr("cx");
+        this.originY = this.attr("cy");
+        this.scale(1.25, 1.25);
+        this.animate({opacity: .5}, 500, "ease-in");
+    };
+    
+    var moveObject = function(dragX, dragY) {
+        var centreX = this.originX + dragX;
+        var centreY = this.originY + dragY;
+        this.attr(
+                {
+                cx: centreX, 
+                cy: centreY
+                }
+        );
+        if ((centreX > 260 && centreY > 120) && (centreX < 340 && centreY < 200) && (this.id === yellowId)) {
+            this.undrag();
+            setDisplayWindowText(animateDisplayWindow,"JAILED !",235, 160, 36, "red", false);
+        }
+    };
+
+    var releaseObject = function() {
+        this.animate({opacity: 1}, 500, "ease-in");
+        this.scale(0.8, 0.8);
+    };
+    
+    circleSet.drag(moveObject, startDrag, releaseObject);
+}
+
+function animate4(animateDisplayWindow) {
+    var imagePath = "../images/squirel.jpg";
+    setDisplayWindowImage(displayBoxPaper,imagePath,15, 25, 400, 300, 1);    
+    for (verticalBox = 0; verticalBox < 4; verticalBox++) {
+        for (horizontalBox = 0; horizontalBox < 5; horizontalBox++) {
+            (function(verticalBox, horizontalBox) {
+                 var hideBoxes = displayBoxPaper.rect(10 + (horizontalBox * 82), 10 + (verticalBox * 82), 82, 82);
+                hideBoxes.attr(
+                    {
+                        fill: '#24577B',
+                        stroke: 'gray'
+                    }
+                );
+                hideBoxes.node.onmouseover = function() {
+                    hideBoxes.attr("opacity", 0);
+                };
+                hideBoxes.node.onmouseout = function() {
+                    hideBoxes.attr("opacity", 1);
+                };
+            })
+            (verticalBox, horizontalBox);
+        }
+    }    
 }
