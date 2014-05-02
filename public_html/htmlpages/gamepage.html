@@ -173,9 +173,6 @@ and open the template in the editor.
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td id="questionBox"></td>                                    
-                                </tr>
-                                <tr>
                                     <td>
                                         <table>
                                             <tr>
@@ -201,21 +198,20 @@ and open the template in the editor.
                                     </td>
                                 </tr>
                                 <tr>
+                                    <td id="questionBox"></td>                                    
+                                </tr>
+                                <tr>
                                     <td>
                                         <table class="answerButtons">
                                             <tr>
                                                 <td><button id="answerA" type="button"
                                                             onclick="return answerEvent(this.id, questionList, allBoxes)"></button></td>
-                                            </tr>
-                                            <tr>
                                                 <td><button id="answerB" type="button"
                                                             onclick="return answerEvent(this.id, questionList, allBoxes)"></button></td>
                                             </tr>
                                             <tr>
                                                 <td><button id="answerC" type="button"
                                                             onclick="return answerEvent(this.id, questionList, allBoxes)"></button></td>
-                                            </tr>
-                                            <tr>
                                                 <td><button id="answerD" type="button"
                                                             onclick="return answerEvent(this.id, questionList, allBoxes)"></button></td>
                                             </tr>
@@ -237,9 +233,9 @@ and open the template in the editor.
             <script>
                 var allBoxes = new Object();
                 allBoxes.displayBoxPaper = setDisplayWindow(600,300);
-                allBoxes.questionBoxPaper = setQuestionWindow(420,100);
-                allBoxes.timerBoxPaper = setTimerBoxPaper(128,128);
-                allBoxes.scoresBoxPaper = setScoresBoxPaper(172,128);
+                allBoxes.questionBoxPaper = setQuestionWindow(600,100);
+                allBoxes.timerBoxPaper = setTimerBoxPaper(100,128);
+                allBoxes.scoresBoxPaper = setScoresBoxPaper(100,128);
                 var questionList = configGame(allBoxes);
             </script>
             <audio id="sound">

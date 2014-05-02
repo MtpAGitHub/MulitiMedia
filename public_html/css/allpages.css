@@ -1,7 +1,7 @@
 body {
     font-family: Geneva, sans-serif;
-    width: 1200px;
-    height: 1000px;
+    width: 1024px;
+    height: 768px;
     background: -webkit-linear-gradient(#0052CC, #66A3FF); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#0052CC, #66A3FF); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(#0052CC, #66A3FF); /* For Firefox 3.6 to 15 */
@@ -17,7 +17,7 @@ body {
 .gameText {
     background-color: black;
     border-color: white;
-    margin : 10px 10px 10px 10px;
+    margin : 5px 5px 5px 5px;
 }
 
 .headers {
@@ -32,9 +32,9 @@ body {
     padding: 5px;
     border: 2px solid white;
     border-radius: 15px;
-    margin: 20px;
+    margin: 10px;
     overflow: auto;
-    width: 95%;
+    width: 98%;
 }
 
 .footers {

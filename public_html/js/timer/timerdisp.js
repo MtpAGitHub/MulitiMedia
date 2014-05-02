@@ -1,3 +1,8 @@
+/* 
+ * 020514   MtpA    Shifted display a bit
+ * 040414   MtpA    Create script
+ */
+
 function timerDial(timerCount, timerPaper) {
     timerPaper.clear();
     var timerMarker = 10;
@@ -5,8 +10,8 @@ function timerDial(timerCount, timerPaper) {
     var inner = 10;
     var outer = 45;
     var opacityVal = 1;
-    var cx = outer + width;
-    var cy = outer + width;
+    var cx = outer + width + 7;
+    var cy = outer + width + 7;
     var sectors = new Array();
     var beta = 2 * Math.PI / timerMarker;
 

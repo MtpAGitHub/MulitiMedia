@@ -9,7 +9,7 @@ function setQuestionWindow(width, height) {
 }
 
 function setQuestionText(questionPaper, questionText, xpos, ypos, textSize) {
-    var splitLength = 62;
+    var splitLength = 80;
     questionPaper.clear();
     if (questionText.length > splitLength) {
         questionText = splitQuestion(questionText, splitLength);
