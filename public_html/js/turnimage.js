@@ -44,7 +44,6 @@ function turnImage(pressedButton, questionList) {
     turnElement = document.getElementById("back" + pressedButton);
     turnElement.appendChild(turnImage);
     document.querySelector(queryElement).classList.toggle("turn");
-    startDebugMsg(queryElement,pressedButton);    
 }
 
 function matchImage(imgElement) {

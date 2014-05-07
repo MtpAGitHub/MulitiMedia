@@ -8,42 +8,33 @@ and open the template in the editor.
     Author     : MtpA
 */
 
-
-.pictureBox {
-	-moz-perspective: 1000px;
-}
-
 .pictureBox.turn .pictureTurner {
-        -moz-transform: rotateY(180deg);
-        transform: rotateY(180deg);
-        -webkit-transform: rotateY(180deg);
-        -ms-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
 }
 
 .pictureBox, .front, .back {
-	width: 64px;
-	height: 64px;
+    width: 64px;
+    height: 64px;
 }
 
 .front, .back {
-	-moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-
-.front {
-	z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .back {
-	-moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
 }
 
 .pictureTurner {
-	-moz-transition: 0.7s;
-	-moz-transform-style: preserve-3d;
-
-	position: relative;
+    transition: 0.7s;
+    -webkit-transition: 0.7s;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
 }
