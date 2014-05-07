@@ -4,7 +4,9 @@
 
 function answerEvent(pressedButton, questionList, answerBoxes) {
     var soundContainer = document.getElementById("sound");
+    var videoContainer = document.getElementsByClassName("pageVideo")[0];
     soundContainer.pause();
+    videoContainer.pause();
     stopTimer(questionTimer);
 }
 
