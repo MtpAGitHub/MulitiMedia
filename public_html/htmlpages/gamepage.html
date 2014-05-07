@@ -204,15 +204,15 @@ and open the template in the editor.
                                     <td>
                                         <table class="answerButtons">
                                             <tr>
-                                                <td><button id="answerA" type="button"
+                                                <td><button id="A" type="button"
                                                             onclick="return answerEvent(this.id, questionList, allBoxes)"></button></td>
-                                                <td><button id="answerB" type="button"
+                                                <td><button id="B" type="button"
                                                             onclick="return answerEvent(this.id, questionList, allBoxes)"></button></td>
                                             </tr>
                                             <tr>
-                                                <td><button id="answerC" type="button"
+                                                <td><button id="C" type="button"
                                                             onclick="return answerEvent(this.id, questionList, allBoxes)"></button></td>
-                                                <td><button id="answerD" type="button"
+                                                <td><button id="D" type="button"
                                                             onclick="return answerEvent(this.id, questionList, allBoxes)"></button></td>
                                             </tr>
                                         </table>                                        
@@ -232,6 +232,7 @@ and open the template in the editor.
         <div id="misc">
             <script>
                 var allBoxes = new Object();
+                currentScore = 0;
                 allBoxes.displayBoxPaper = setDisplayWindow(600,300);
                 allBoxes.questionBoxPaper = setQuestionWindow(600,100);
                 allBoxes.timerBoxPaper = setTimerBoxPaper(100,128);

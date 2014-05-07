@@ -7,6 +7,7 @@ function setScoresBoxPaper(width, height) {
 }
 
 function setScoreText(scoresBoxPaper, scoresText, scoreAmount) {
+    scoresBoxPaper.clear();
     var scoresBoxText = scoresBoxPaper.text(20, 10, scoresText);
     scoresBoxText.attr(
             {

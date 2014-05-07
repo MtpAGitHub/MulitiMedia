@@ -9,14 +9,17 @@ function displayQuestion(questionPaper, questionText) {
 }
 
 function displayAnswers(answerA, answerB, answerC, answerD) {
-    document.getElementById("answerA").innerHTML = answerA;
-    document.getElementById("answerB").innerHTML = answerB;
-    document.getElementById("answerC").innerHTML = answerC;
-    document.getElementById("answerD").innerHTML = answerD;
+    document.getElementById("A").innerHTML = answerA;
+    document.getElementById("A").style.backgroundColor = "lightgray";
+    document.getElementById("B").innerHTML = answerB;
+    document.getElementById("B").style.backgroundColor = "lightgray";
+    document.getElementById("C").innerHTML = answerC;
+    document.getElementById("C").style.backgroundColor = "lightgray";
+    document.getElementById("D").innerHTML = answerD;
+    document.getElementById("D").style.backgroundColor = "lightgray";
 }
 
-function startSound(displayBoxPaper, soundID, song) {
-    setDisplayWindowText(displayBoxPaper,"Just listen to the music !",20, 20, 24, "white", true);
+function startSound(soundID, song) {
     var soundContainer = document.getElementById(soundID);
     var containerSound = document.getElementById("soundSource");
     containerSound.src = "../sound/" + song;

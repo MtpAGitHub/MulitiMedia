@@ -5,7 +5,7 @@
  * 140314   MtpA    Created script
  */
 
-function questionEvent(pressedButton, questionList, questionBoxes) {    
+function questionEvent(pressedButton, questionList, questionBoxes) {
     var questionArrayPos = pressedButton -1;
     var curQuestion = questionList[questionArrayPos];
     var curTime = 10;
@@ -18,7 +18,8 @@ function questionEvent(pressedButton, questionList, questionBoxes) {
     switch (curQuestion.type) {
         case "Sound":
             toggleDisplayWindow(questionBoxes.displayBoxPaper,"raphael");
-            startSound(questionBoxes.displayBoxPaper, "sound", curQuestion.file);
+            setDisplayWindowText(questionBoxes.displayBoxPaper,"Just listen to the music !",20, 20, 24, "white", true);
+            startSound("sound", curQuestion.file);
             countdownTime = 2000;
             break;
         case "Question":
@@ -40,7 +41,7 @@ function questionEvent(pressedButton, questionList, questionBoxes) {
         default:
             break;
     }
-    questionTimer = startTimer(questionBoxes.timerBoxPaper ,curTime, countdownTime);
+    questionTimer = startTimer(questionBoxes, curTime, countdownTime);
     return false;
 }
 

@@ -7,12 +7,13 @@ function timerDisp(timerBoxPaper, curTime) {
     timerDial(curTime, timerBoxPaper);
 }
 
-function startTimer(timerBoxPaper, curTime, timeGap) {
+function startTimer(boxPapers, curTime, timeGap) {
     var timerInterval = setInterval(
             function() {
-                timerDial(curTime, timerBoxPaper);
+                timerDial(curTime, boxPapers.timerBoxPaper);
                 if (curTime-- === -1) {
                     stopTimer(timerInterval);
+                    processAnswer("timer", boxPapers);
                 }
             }, timeGap
             );
