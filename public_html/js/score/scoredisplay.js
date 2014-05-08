@@ -1,4 +1,5 @@
 /* 
+ * 070514   MtpA    Amended with animation
  * 250414   MtpA    Create script
  */
 
