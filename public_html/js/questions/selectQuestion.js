@@ -11,6 +11,7 @@ function questionEvent(pressedButton, questionList, questionBoxes) {
     var curTime = 10;
     var countdownTime = 1000;
     curAnswer = curQuestion.answer;
+    isMusicIconShown = true;
     
     turnImage(pressedButton, questionList);
     displayQuestion(questionBoxes.questionBoxPaper, curQuestion.text);

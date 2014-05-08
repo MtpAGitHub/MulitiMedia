@@ -1,4 +1,6 @@
 /* 
+ * 
+ * 080514   MtpA    Added the falling notes
  * 300414   MtpA    Added delay parameter to increaseOpacity
  * 300414   MtpA    Added more parameters to setDisplayWindowText - colour and isClear (do you clear the existing window content)
  * 300414   MtpA    Created script to hold common functions across modules
@@ -37,49 +39,51 @@ function increaseOpacity(opacityObj, opacityVal, delay) {
 
 function noteCascade(displayPaper) {
     displayPaper.clear();
-    var musicIconFile = "../icons/music64.png";
-    var displayIcon = displayPaper.image(musicIconFile, 0, 0, 64, 64);
-    kickOffIcons(displayIcon);
+    kickOffIcons(displayPaper);
 }
 
-function kickOffIcons(displayIcon) {
+function kickOffIcons(displayPaper) {
     var musicIconNum = randomNumber(0, 4);
     var iconOpacity = randomNumber(3, 10);
     var iconPosition = randomNumber(10, 380);
     var iconSpeed = randomNumber(2000, 5000);
-    
+
+    if (!isMusicIconShown) {
+        return;
+    }
     switch (musicIconNum) {
         case 0:
-            var musicIconFile = "../icons/music64.png";
+            var musicIconFile = "../icons/bluemusic64.png";
             break;
         case 1:
-            var musicIconFile = "../icons/music64.png";
+            var musicIconFile = "../icons/yellowmusic64.png";
             break;
         case 2:
-            var musicIconFile = "../icons/music64.png";
+            var musicIconFile = "../icons/greenmusic64.png";
             break;
         case 3:
-            var musicIconFile = "../icons/music64.png";
+            var musicIconFile = "../icons/redmusic64.png";
             break;
         case 4:
-            var musicIconFile = "../icons/music64.png";
+            var musicIconFile = "../icons/purplemusic64.png";
             break;
         default:
             var musicIconFile = "../icons/music64.png";
             break;            
     }
-    displayIcon.attr(
+    var musicDisplayIcon = displayPaper.image(musicIconFile, 0, 0, 64, 64);
+    musicDisplayIcon.attr(
             {
                 x: iconPosition,
                 opacity: iconOpacity/10
             }
     );
-    displayIcon.animate(
+    musicDisplayIcon.animate(
             {
                 transform: "t0, 400"
             },
             iconSpeed,
             'linear',
-            setTimeout(function () {noteCascade(displayIcon);}, 1000)
-    );    
+            setTimeout(function () {kickOffIcons(displayPaper);}, 1000)
+    );        
 }

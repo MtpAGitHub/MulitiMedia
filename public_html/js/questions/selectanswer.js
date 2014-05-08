@@ -13,6 +13,7 @@ function answerEvent(pressedButton, questionList, displayBoxes) {
 }
 
 function processAnswer(userAnswer, displayBoxes) {
+    isMusicIconShown = false;
     if (userAnswer === "timer") {
         setDisplayWindowText(displayBoxes.displayBoxPaper, "Out Of Time !", 20, 20, 24, "white", true);
         startSound("sound", "gong.mp3");                

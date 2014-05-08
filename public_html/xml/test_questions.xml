@@ -1,102 +1,93 @@
 <?xml version="1.0"?>
 <Quiz>
-    <Question id="17">
-        <Type>Animation</Type>
-        <File>squirel.jpg</File>
-        <AniFunc>a4</AniFunc>
-        <Text>What animal is hidden here ?</Text>
-        <Option optId="1">Rabbit</Option>
-        <Option optId="2">Horse</Option>
-        <Option optId="3">Squirel</Option>
-        <Option optId="4">Bird</Option>
-        <Answer>C</Answer>
+    <Question id="1">
+        <Type>Sound</Type>
+        <File>gong.mp3</File>
+        <Text>What sound is this ?</Text>
+        <Option optId="1">Gong</Option>
+        <Option optId="2">Harp</Option>
+        <Option optId="3">Drum</Option>
+        <Option optId="4">Piano</Option>
+        <Answer>A</Answer>
     </Question>
-    <Question id="17">
-        <Type>Animation</Type>
-        <File>squirel.jpg</File>
-        <AniFunc>a4</AniFunc>
-        <Text>What animal is hidden here ?</Text>
-        <Option optId="1">Rabbit</Option>
-        <Option optId="2">Horse</Option>
-        <Option optId="3">Squirel</Option>
-        <Option optId="4">Bird</Option>
-        <Answer>C</Answer>
+    <Question id="1">
+        <Type>Sound</Type>
+        <File>gong.mp3</File>
+        <Text>What sound is this ?</Text>
+        <Option optId="1">Gong</Option>
+        <Option optId="2">Harp</Option>
+        <Option optId="3">Drum</Option>
+        <Option optId="4">Piano</Option>
+        <Answer>A</Answer>
     </Question>
-    <Question id="17">
-        <Type>Animation</Type>
-        <File>squirel.jpg</File>
-        <AniFunc>a4</AniFunc>
-        <Text>What animal is hidden here ?</Text>
-        <Option optId="1">Rabbit</Option>
-        <Option optId="2">Horse</Option>
-        <Option optId="3">Squirel</Option>
-        <Option optId="4">Bird</Option>
-        <Answer>C</Answer>
+    <Question id="1">
+        <Type>Sound</Type>
+        <File>gong.mp3</File>
+        <Text>What sound is this ?</Text>
+        <Option optId="1">Gong</Option>
+        <Option optId="2">Harp</Option>
+        <Option optId="3">Drum</Option>
+        <Option optId="4">Piano</Option>
+        <Answer>A</Answer>
     </Question>
-    <Question id="17">
-        <Type>Animation</Type>
-        <File>squirel.jpg</File>
-        <AniFunc>a4</AniFunc>
-        <Text>What animal is hidden here ?</Text>
-        <Option optId="1">Rabbit</Option>
-        <Option optId="2">Horse</Option>
-        <Option optId="3">Squirel</Option>
-        <Option optId="4">Bird</Option>
-        <Answer>C</Answer>
+    <Question id="1">
+        <Type>Sound</Type>
+        <File>gong.mp3</File>
+        <Text>What sound is this ?</Text>
+        <Option optId="1">Gong</Option>
+        <Option optId="2">Harp</Option>
+        <Option optId="3">Drum</Option>
+        <Option optId="4">Piano</Option>
+        <Answer>A</Answer>
     </Question>
-    <Question id="17">
-        <Type>Animation</Type>
-        <File>squirel.jpg</File>
-        <AniFunc>a4</AniFunc>
-        <Text>What animal is hidden here ?</Text>
-        <Option optId="1">Rabbit</Option>
-        <Option optId="2">Horse</Option>
-        <Option optId="3">Squirel</Option>
-        <Option optId="4">Bird</Option>
-        <Answer>C</Answer>
+    <Question id="1">
+        <Type>Sound</Type>
+        <File>gong.mp3</File>
+        <Text>What sound is this ?</Text>
+        <Option optId="1">Gong</Option>
+        <Option optId="2">Harp</Option>
+        <Option optId="3">Drum</Option>
+        <Option optId="4">Piano</Option>
+        <Answer>A</Answer>
     </Question>
-    <Question id="17">
-        <Type>Animation</Type>
-        <File>squirel.jpg</File>
-        <AniFunc>a4</AniFunc>
-        <Text>What animal is hidden here ?</Text>
-        <Option optId="1">Rabbit</Option>
-        <Option optId="2">Horse</Option>
-        <Option optId="3">Squirel</Option>
-        <Option optId="4">Bird</Option>
-        <Answer>C</Answer>
+    <Question id="1">
+        <Type>Sound</Type>
+        <File>gong.mp3</File>
+        <Text>What sound is this ?</Text>
+        <Option optId="1">Gong</Option>
+        <Option optId="2">Harp</Option>
+        <Option optId="3">Drum</Option>
+        <Option optId="4">Piano</Option>
+        <Answer>A</Answer>
     </Question>
-    <Question id="17">
-        <Type>Animation</Type>
-        <File>squirel.jpg</File>
-        <AniFunc>a4</AniFunc>
-        <Text>What animal is hidden here ?</Text>
-        <Option optId="1">Rabbit</Option>
-        <Option optId="2">Horse</Option>
-        <Option optId="3">Squirel</Option>
-        <Option optId="4">Bird</Option>
-        <Answer>C</Answer>
+    <Question id="1">
+        <Type>Sound</Type>
+        <File>gong.mp3</File>
+        <Text>What sound is this ?</Text>
+        <Option optId="1">Gong</Option>
+        <Option optId="2">Harp</Option>
+        <Option optId="3">Drum</Option>
+        <Option optId="4">Piano</Option>
+        <Answer>A</Answer>
     </Question>
-    <Question id="17">
-        <Type>Animation</Type>
-        <File>squirel.jpg</File>
-        <AniFunc>a4</AniFunc>
-        <Text>What animal is hidden here ?</Text>
-        <Option optId="1">Rabbit</Option>
-        <Option optId="2">Horse</Option>
-        <Option optId="3">Squirel</Option>
-        <Option optId="4">Bird</Option>
-        <Answer>C</Answer>
+    <Question id="1">
+        <Type>Sound</Type>
+        <File>gong.mp3</File>
+        <Text>What sound is this ?</Text>
+        <Option optId="1">Gong</Option>
+        <Option optId="2">Harp</Option>
+        <Option optId="3">Drum</Option>
+        <Option optId="4">Piano</Option>
+        <Answer>A</Answer>
     </Question>
-    <Question id="17">
-        <Type>Animation</Type>
-        <File>squirel.jpg</File>
-        <AniFunc>a4</AniFunc>
-        <Text>What animal is hidden here ?</Text>
-        <Option optId="1">Rabbit</Option>
-        <Option optId="2">Horse</Option>
-        <Option optId="3">Squirel</Option>
-        <Option optId="4">Bird</Option>
-        <Answer>C</Answer>
+    <Question id="1">
+        <Type>Sound</Type>
+        <File>gong.mp3</File>
+        <Text>What sound is this ?</Text>
+        <Option optId="1">Gong</Option>
+        <Option optId="2">Harp</Option>
+        <Option optId="3">Drum</Option>
+        <Option optId="4">Piano</Option>
+        <Answer>A</Answer>
     </Question>
 </Quiz>
