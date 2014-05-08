@@ -58,6 +58,8 @@ function processAnimation(displayBoxPaper, curAnimation) {
             animate3(displayBoxPaper);
             break;
         case "a4":
+            var imagePath = "../images/" + curAnimation.file;
+            setDisplayWindowImage(displayBoxPaper, imagePath, 85, 0, 400, 300, 1);
             animate4(displayBoxPaper);
             break;
         default:

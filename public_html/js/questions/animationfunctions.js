@@ -127,26 +127,25 @@ function animate3(animateDisplayWindow) {
 }
 
 function animate4(animateDisplayWindow) {
-    var imagePath = "../images/squirel.jpg";
-    setDisplayWindowImage(animateDisplayWindow,imagePath,85, 0, 400, 300, 1);    
-    for (verticalBox = 0; verticalBox < 3; verticalBox++) {
-        for (horizontalBox = 0; horizontalBox < 4; horizontalBox++) {
-            (function(verticalBox, horizontalBox) {
-                var hideBoxes = animateDisplayWindow.rect(85 + (horizontalBox * 100), 0 + (verticalBox * 100), 100, 100);
-                hideBoxes.attr(
-                    {
-                        fill: '#24577B',
-                        stroke: 'gray'
-                    }
-                );
-                hideBoxes.node.onmouseover = function() {
-                    hideBoxes.attr("opacity", 0);
-                };
-                hideBoxes.node.onmouseout = function() {
-                    hideBoxes.attr("opacity", 1);
-                };
-            })
-            (verticalBox, horizontalBox);
+    for (var verticalBox = 0; verticalBox < 3; verticalBox++) {
+        for (var horizontalBox = 0; horizontalBox < 4; horizontalBox++) {
+            setUpBoxes(animateDisplayWindow, verticalBox, horizontalBox);
         }
-    }    
+    }
+}
+
+function setUpBoxes(displayBoxPaper, verticalBox, horizontalBox) {
+    var hideBoxes = displayBoxPaper.rect(85 + (horizontalBox * 100), 0 + (verticalBox * 100), 100, 100);
+    hideBoxes.attr(
+            {
+                fill: '#24577B',
+                stroke: 'gray'
+            }
+    );
+    hideBoxes.mouseover(function() {
+        hideBoxes.attr("opacity", 0);
+    });
+    hideBoxes.mouseout(function() {
+        hideBoxes.attr("opacity", 1);
+    });
 }
