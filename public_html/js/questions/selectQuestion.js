@@ -18,7 +18,7 @@ function questionEvent(pressedButton, questionList, questionBoxes) {
     switch (curQuestion.type) {
         case "Sound":
             toggleDisplayWindow(questionBoxes.displayBoxPaper,"raphael");
-            setDisplayWindowText(questionBoxes.displayBoxPaper,"Just listen to the music !",20, 20, 24, "white", true);
+            noteCascade(questionBoxes.displayBoxPaper);
             startSound("sound", curQuestion.file);
             countdownTime = 2000;
             break;
