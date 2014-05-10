@@ -1,5 +1,4 @@
 /* 
- * 
  * 080514   MtpA    Added the falling notes
  * 300414   MtpA    Added delay parameter to increaseOpacity
  * 300414   MtpA    Added more parameters to setDisplayWindowText - colour and isClear (do you clear the existing window content)
