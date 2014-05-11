@@ -24,7 +24,7 @@ function processAnswer(userAnswer, displayBoxes) {
         startSound("sound", "applause.mp3");
         setScoreText(displayBoxes.scoresBoxPaper, "Score", currentScore);
     } else {
-        setDisplayWindowText(displayBoxes.displayBoxPaper, "Bad Luck !", 20, 20, 24, "white", true);
+        answerIncorrect(displayBoxes.displayBoxPaper);
         startSound("sound", "buzzer.mp3");        
     }
 }
@@ -247,6 +247,57 @@ function answerIncorrect(displayBoxPaper) {
                 'stroke-width': 2
             }
     );    
+    var tumbleText = new Array("B","d","L","c");
+    var dropText = new Array("a"," ","u","k");
+    var tumbleCount = 0;
+    var dropCount = 0;
+    svgTumbleText(displayBoxPaper, tumbleText, dropText, tumbleCount, dropCount);
+}
+
+function svgTumbleText(displayBoxPaper, ttTumbleText, ttDropText, ttTumbleCount, ttDropCount) {
+	if (ttTumbleCount <= 3) {
+		var ttPos = 190 + (40 * ttTumbleCount);
+		var ttTransString = "t" + ttPos + ",0r360";
+		var svgText = displayBoxPaper.text(0,120,ttTumbleText[ttTumbleCount]);
+		ttTumbleCount++;
+		svgText.attr(
+			{
+				'font-family':"arial",
+				'font-size':32
+			}
+		);
+		svgText.animate(
+			{
+				transform:ttTransString,
+				fill:'white'
+			}
+		,1000,'ease-in',setTimeout(function() {svgDropText(displayBoxPaper, ttTumbleText, ttDropText, ttTumbleCount, ttDropCount);},1000));
+	}
+	else {
+            return;
+	}
+}
+
+function svgDropText(displayBoxPaper, dtTumbleText, dtDropText, dtTumbleCount, dtDropCount) {
+	var dtPos = 210 + (40 * dtDropCount);
+	var svgDropText = displayBoxPaper.text(dtPos,0,dtDropText[dtDropCount]);
+	var dtDelay = 750;
+	if (dtDropCount === 1) {
+		dtDelay = 0;
+	}
+	dtDropCount++;
+	svgDropText.attr(
+		{
+			'font-family':"arial",
+			'font-size':32
+		}
+	);
+	svgDropText.animate(
+		{
+			transform:'t0,120',
+			fill:'white'
+		}
+	,dtDelay,'ease-in',setTimeout(function() {svgTumbleText(displayBoxPaper, dtTumbleText, dtDropText, dtTumbleCount, dtDropCount);},dtDelay));
 }
 
 function answerDebugMsg(a, b) {
