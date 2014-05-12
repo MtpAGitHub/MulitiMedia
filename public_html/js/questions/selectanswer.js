@@ -13,6 +13,7 @@ function processAnswer(userAnswer, displayBoxes) {
     var videoContainer = document.getElementsByClassName("pageVideo")[0];
     soundContainer.pause();
     videoContainer.pause();
+    toggleDisplayWindow(displayBoxes.displayBoxPaper,"raphael");
     isMusicIconShown = false;
     if (userAnswer === "timer") {
         outOfTime(displayBoxes.displayBoxPaper);
@@ -30,7 +31,7 @@ function processAnswer(userAnswer, displayBoxes) {
 }
 
 function outOfTime(displayBoxPaper) {
-    var canvasBox = displayBoxPaper.rect(0,0,700,300);
+    var canvasBox = displayBoxPaper.rect(0,0,600,300);
     canvasBox.attr(
             {
                 fill:'black',
@@ -89,7 +90,7 @@ function outOfTime(displayBoxPaper) {
 }
 
 function answerCorrect(displayBoxPaper) {
-    var canvasBox = displayBoxPaper.rect(0,0,700,300);
+    var canvasBox = displayBoxPaper.rect(0,0,600,300);
     canvasBox.attr(
             {
                 fill:'black',
@@ -239,7 +240,7 @@ function answerCorrect(displayBoxPaper) {
 }
 
 function answerIncorrect(displayBoxPaper) {
-    var canvasBox = displayBoxPaper.rect(0,0,700,300);
+    var canvasBox = displayBoxPaper.rect(0,0,600,300);
     canvasBox.attr(
             {
                 fill:'black',
@@ -251,10 +252,10 @@ function answerIncorrect(displayBoxPaper) {
     var dropText = new Array("a"," ","u","k");
     var tumbleCount = 0;
     var dropCount = 0;
-    svgTumbleText(displayBoxPaper, tumbleText, dropText, tumbleCount, dropCount);
+    answerTumbleText(displayBoxPaper, tumbleText, dropText, tumbleCount, dropCount);
 }
 
-function svgTumbleText(displayBoxPaper, ttTumbleText, ttDropText, ttTumbleCount, ttDropCount) {
+function answerTumbleText(displayBoxPaper, ttTumbleText, ttDropText, ttTumbleCount, ttDropCount) {
 	if (ttTumbleCount <= 3) {
 		var ttPos = 190 + (40 * ttTumbleCount);
 		var ttTransString = "t" + ttPos + ",0r360";
@@ -271,17 +272,17 @@ function svgTumbleText(displayBoxPaper, ttTumbleText, ttDropText, ttTumbleCount,
 				transform:ttTransString,
 				fill:'white'
 			}
-		,1000,'ease-in',setTimeout(function() {svgDropText(displayBoxPaper, ttTumbleText, ttDropText, ttTumbleCount, ttDropCount);},1000));
+		,500,'ease-in',setTimeout(function() {answerDropText(displayBoxPaper, ttTumbleText, ttDropText, ttTumbleCount, ttDropCount);},500));
 	}
 	else {
             return;
 	}
 }
 
-function svgDropText(displayBoxPaper, dtTumbleText, dtDropText, dtTumbleCount, dtDropCount) {
+function answerDropText(displayBoxPaper, dtTumbleText, dtDropText, dtTumbleCount, dtDropCount) {
 	var dtPos = 210 + (40 * dtDropCount);
 	var svgDropText = displayBoxPaper.text(dtPos,0,dtDropText[dtDropCount]);
-	var dtDelay = 750;
+	var dtDelay = 375;
 	if (dtDropCount === 1) {
 		dtDelay = 0;
 	}
@@ -297,7 +298,7 @@ function svgDropText(displayBoxPaper, dtTumbleText, dtDropText, dtTumbleCount, d
 			transform:'t0,120',
 			fill:'white'
 		}
-	,dtDelay,'ease-in',setTimeout(function() {svgTumbleText(displayBoxPaper, dtTumbleText, dtDropText, dtTumbleCount, dtDropCount);},dtDelay));
+	,dtDelay,'ease-in',setTimeout(function() {answerTumbleText(displayBoxPaper, dtTumbleText, dtDropText, dtTumbleCount, dtDropCount);},dtDelay));
 }
 
 function answerDebugMsg(a, b) {

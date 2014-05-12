@@ -23,11 +23,11 @@
     <Question id="3">
         <Type>Animation</Type>
         <AniFunc>a1</AniFunc>
-        <Text>What shape is represented by this 3D model?</Text>
-        <Option optId="1">Circle</Option>
-        <Option optId="2">Square</Option>
-        <Option optId="3">Triangle</Option>
-        <Option optId="4">Heptagon</Option>
+        <Text>What colour effect has been applied ?</Text>
+        <Option optId="1">Shading</Option>
+        <Option optId="2">Gradient</Option>
+        <Option optId="3">Highlight</Option>
+        <Option optId="4">Opacity</Option>
         <Answer>B</Answer>
     </Question>
     <Question id="4">
@@ -123,7 +123,7 @@
     <Question id="13">
         <Type>Video</Type>
         <File>assignment2_x264.mp4</File>
-        <Text>The video has had frames moved.  What effects have been used to joined the clips together ?</Text>
+        <Text>The video has had frames moved.  How have the clips been joined together ?</Text>
         <Option optId="1">Frame blurring</Option>
         <Option optId="2">Volume adjustment</Option>
         <Option optId="3">Fading of visuals and sound</Option>
@@ -168,7 +168,7 @@
         <Text>What animal is hidden here ?</Text>
         <Option optId="1">Rabbit</Option>
         <Option optId="2">Horse</Option>
-        <Option optId="3">Squirel</Option>
+        <Option optId="3">Squirrel</Option>
         <Option optId="4">Bird</Option>
         <Answer>C</Answer>
     </Question>

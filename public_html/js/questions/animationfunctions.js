@@ -85,7 +85,7 @@ function animate3(animateDisplayWindow) {
     var redCircle = animateDisplayWindow.circle(550, 40, 30).attr({fill: "red"});
     var yellowCircle = animateDisplayWindow.circle(550, 260, 30).attr({fill: "yellow"});
     var pinkCircle = animateDisplayWindow.circle(40, 260, 30).attr({fill: "pink"});
-    var dropBox = animateDisplayWindow.rect(260, 120, 80, 80);
+    var dropBox = animateDisplayWindow.rect(260, 120, 80, 80).attr({fill: "lightgray"});
     var yellowId = yellowCircle.id;
     var circleSet = animateDisplayWindow.set();
 

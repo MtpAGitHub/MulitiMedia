@@ -15,18 +15,19 @@ and open the template in the editor.
     margin: 20px;
     overflow: auto;
     width: 95%;
-    background-color: lightgray;
+    background-color: black;
 }
 
 
 .qgrid {
     padding: 2px;
-    border: 2px solid lightgray;
-    border-radius: 5px;    
-    background: -webkit-linear-gradient(#0052CC, #66A3FF); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#0052CC, #66A3FF); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#0052CC, #66A3FF); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#0052CC, #66A3FF); /* Standard syntax */
+    border: 2px solid gray;
+    border-radius: 5px;
+    background: lightgray;
+//    background: -webkit-linear-gradient(#0052CC, #66A3FF); /* For Safari 5.1 to 6.0 */
+//    background: -o-linear-gradient(#0052CC, #66A3FF); /* For Opera 11.1 to 12.0 */
+//    background: -moz-linear-gradient(#0052CC, #66A3FF); /* For Firefox 3.6 to 15 */
+//    background: linear-gradient(#0052CC, #66A3FF); /* Standard syntax */
 }
 
 .qgrid:hover {
@@ -36,12 +37,12 @@ and open the template in the editor.
 .centreGrid, .questionGrid, .answerGrid{
     margin-left: 5px;
     margin-right: 5px;
-    border: 2px solid white;
+//    border: 2px solid white;
     border-radius: 10px;
-    background: -webkit-linear-gradient(#0052CC, #66A3FF); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#0052CC, #66A3FF); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#0052CC, #66A3FF); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#0052CC, #66A3FF); /* Standard syntax */
+//    background: -webkit-linear-gradient(#0052CC, #66A3FF); /* For Safari 5.1 to 6.0 */
+//    background: -o-linear-gradient(#0052CC, #66A3FF); /* For Opera 11.1 to 12.0 */
+//    background: -moz-linear-gradient(#0052CC, #66A3FF); /* For Firefox 3.6 to 15 */
+//    background: linear-gradient(#0052CC, #66A3FF); /* Standard syntax */
 }
 
 .centreGrid {
@@ -58,7 +59,7 @@ and open the template in the editor.
 }
 
 .answerButtons tr td {
-    background: blueviolet;
+    background: blue;
     width: 280px;
     height: 60px;
     border: 2px solid white;

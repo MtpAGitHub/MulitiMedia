@@ -1,6 +1,6 @@
 function gameStats(textPaper) {
     textPaper.clear();
-    var statsText = textPaper.text(0, 10, "Some example stats text");
+    var statsText = textPaper.text(0, 10, "Sorry Not Complete !");
     statsText.attr(
             {
                 'font-family': "arial",
